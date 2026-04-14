@@ -1,0 +1,78 @@
+@import url(/global/css/global.css);
+
+#politica a {
+    color: var(--pink-one);
+    font-weight: 700;
+}
+
+.capa-pdp {
+    background: url(/sobre-a-clave/img/banner-dados.png) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-titular-dados {
+    background: linear-gradient(rgba(244, 53, 119, .7), rgba(255, 255, 255, 7.0)),
+    url(/sobre-a-clave/img/banner-politica.jpeg) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+details {
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 2px solid var(--purple-one);
+}
+
+details:hover {
+    border: 2px solid var(--pink-one);
+}
+
+details>summary {
+    color: var(--purple-one);
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+details>summary:hover {
+    color: var(--pink-one);
+}
+
+details>p {
+    padding: 5px 10px 10px 20px;
+
+}
+
+.check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 5px;
+    height: 4px;
+    border: 4px;
+    border-style: solid;
+    border-color: var(--pink-one);
+    border-radius: 50%;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}

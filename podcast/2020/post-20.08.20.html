@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodCast - Diversidade e Inclusão</title>
+
+  <!-- Favicon -->
+  <link href="/global/img/logos/favicon.ico" rel="icon">
+
+  <!-- Empresa -->
+  <link rel="stylesheet" href="/podcast/css/podcast.css" />
+
+  <!--/ Tailwind /-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!--/ Fonts Icons Google /-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+  <script src="https://kit.fontawesome.com/260c512de2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--/ Menu Responsive/-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="menu" class="menu-responsive">
+    <div class="md:inline flex justify-between">
+      <a href="/index.html"><img class="logo" src="/global/img/logos/logo-h.png"></a>
+      <div class="menu-toggle"></div>
+    </div>
+    <nav>
+      <ul class=" ul-reset">
+        <li class="droppable">
+          <a href="#">Sobre a Clave</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">apartment</i>
+                  <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+                </li>
+                <li><a href="/sobre-a-clave/empresa.html"><img src="/global/img/menu/img-1.jpeg"></a> </li>
+              </ul>
+              <!--<ul class="ul-reset">
+                    <li class="flex items-center gap-2">
+                      <i class="material-symbols-rounded bg-blue-one">handshake</i>
+                      <a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>
+                    </li>
+                    <li><a href="/sobre-a-clave/seja-parceiro.html"><img src="/global/img/menu/img-6.png"></a></li>
+                  </ul>-->
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract</i>
+                  <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+                </li>
+                <li><a href="/sobre-a-clave/politica-de-privacidade.html"><img src="/global/img/menu/img-2.jpeg"></a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract_edit</i>
+                  <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+                </li>
+                <li><a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf"><img src="/global/img/menu/img-3.jpeg"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Produtos</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca Consultoria</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">hub</i>
+                  <a href="/produtos/consultoria/assessment.html">Assessment</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/capacitacao.html">Capacitação</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/mentoria.html">Mentoria</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/selecao.html">Projetos de Seleção</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/talent-acquisiton.html">Terceirização do Processo de Talent
+                    Acquisition - RPO</a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca plataforma personalizada HR Tech</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">sync_saved_locally</i>
+                  <a href="/produtos/hr-tech/assessment360.html">Assessment 360</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/assessment-customizado.html">Assessment Customizado</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/data-science.html">Assessment Data Science</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/fit-de-comportamentos.html">Assessment Fit de Comportamentos</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/mindset-digital.html">Assessment Mindset Digital</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li>
+          <a href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Blog</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/blog/pag-1.html">Posts</a>
+                </li>
+                <li><a href="/blog/pag-1.html"><img src="/global/img/menu/img-7.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/podcast/pag-1.html">PodCast</a>
+                </li>
+                <li><a href="/podcast/pag-1.html"><img src="/global/img/menu/img-8.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Fale Conosco</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/fale-conosco/contato.html">Contato</a>
+                </li>
+                <li><a href="/fale-conosco/contato.html"><img src="/global/img/menu/img-4.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/fale-conosco/denuncia.html">Denúncia</a>
+                </li>
+                <li><a href="/fale-conosco/denuncia.html"><img src="/global/img/menu/img-5.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--<div id="tradutor">
+          <a href="">
+            <img src="/global/img/menu/icon-brasil.png">
+            <p>PT</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/ico-usa.png">
+            <p>EN</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/icon-es.png">
+            <p>ES</p>
+          </a>
+        </div>-->
+      <a href="https://portal.claveconsultoria.com.br/" target="_blank" class="bg-purple btn-menu">
+        <p>acesso ao portal</p>
+      </a>
+      <div class="cor-green">
+        <div class="flex justify-center items-center gap-3 text-xl pt-5">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+
+  <header>
+    <div class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <figure class="flex justify-center mt-32">
+          <img class="rounded-3xl" src="/podcast/2020/img/Salim-Khouri.png">
+        </figure>
+        <!--/*/-->
+        <div class="flex justify-center gap-2 mt-6">
+          <a class="tag bg-yellow" href="#">#diversidade&inclusão</a>
+          <a class="tag bg-green" href="#">#podcast</a>
+        </div>
+        <!--/*/-->
+        <div class="mt-8">
+          <h3 class="text-4xl font-black">
+            Diversidade e Inclusão
+          </h3>
+        </div>
+        <!--/*/-->
+        <div class="mt-4">
+          <p class="text-xs">20 AGO, 2020</p>
+          <p class="text-sm">Publicado por: Ingrid Emerick e Salim Khouri</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-12">
+    <section class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <p class="mt-6">
+          Do que estamos falando quando nos referimos à <strong class="cor-purple">diversidade</strong>?
+        </p>
+        <p class="mt-6">
+          Diversidade inclui características relacionadas à gênero, raça,
+          etnia, orientação sexual, condição física, classe social, identidade de gênero,
+          religião, sotaque, nacionalidade e idade. Mas também background educacional, saúde,
+          condição de refugiado, diversidade estética, experiência, posicionamento político e
+          diferentes pontos de vista. É o conjunto de características que nos tornam <strong
+            class="cor-purple">únicos</strong>.
+        </p>
+        <p class="mt-6">
+          E do que estamos falando quando nos referimos à <strong class="cor-purple">inclusão</strong>?
+        </p>
+        <p class="mt-6">
+          Inclusão é a valorização e inserção de populações que, por questões históricas e sociais, enfrentam barreiras
+          na sociedade e nas empresas.
+        </p>
+        <p class="mt-6">
+          Uma equipe diversa coloca a empresa em contato com tudo aquilo que ela necessita para se aprimorar e tornar
+          mais competitiva sua estratégia de atuação. Diversos estudos já comprovam que investir em diversidade gera
+          valor.
+        </p>
+        <p class="mt-6">
+          Empresas mais diversas têm uma chance 35% maior de retorno financeiro do que a média do mercado. Segundo o
+          Development Dimensions International, é provável que organizações com equipes diversas aumentem seus negócios
+          1,4 vezes mais em comparação com aquelas com equipes homogêneas. E ainda segundo a Mckinsey & Company, 95% dos
+          líderes acreditam que a D&I promove a inovação.
+        </p>
+        <p class="mt-6">
+          Essas são apenas algumas das reflexões que nosso entrevistado da semana,
+          <a class="cor-blue-one font-black" href="https://www.linkedin.com/in/salimkhouri/" target="_blank">Salim
+            Khouri</a>
+          - Head de Talento e Diversidade LATAM da Ford, nos trouxe.
+        </p>
+        <p class="mt-6">
+          Leia na íntegra a entrevista:
+        </p>
+
+        <p class="mt-6 font-bold italic">
+          Salim, como é que começou esse envolvimento com o tema de diversidade e inclusão na sua vida? Conta um pouco a
+          seu respeito e como se deu este tema para você.
+        </p>
+        <p class="mt-4 ">
+          Sou baiano, sou filho de Libanês com baianos, uma mistura só. Sou formado em Comunicação e Administração, fiz
+          MBA em RH e mestrado em Administração também.
+          <br><br>
+          Além de trabalhar na Ford, também sou professor de muitos aspectos ligados à gestão humana transformação do
+          RH, etc. São quase 20 anos no mercado entre momentos como o Marketing e a maior parte do meu tempo como RH. E
+          faz um tempo que comecei a me encantar e me conectar com a temática de diversidade. Acho que pela minha
+          família, por ser uma família diversa, pela minha própria vida, e pelo meu engajamento organizacional. Então
+          comecei a discutir esse assunto na Ford há mais ou menos 3 anos, comecei a aprender a me aprofundar e comecei
+          a perceber a importância dessa temática de fato para gente gerar ambientes cada vez mais inovadores, cada vez
+          mais criativos e que gerem mais resultado como milhares de pesquisas já falam.
+          <br><br>
+          Então eu comecei a falar mais abertamente sobre o assunto esse ano, vamos dizer assim. Esse ano não, acho que
+          no ano passado. Comecei a participar de alguns eventos, comecei a me expor um pouco mais nas redes sociais.
+          <br><br>
+          Porque eu percebi que precisava compartilhar um pouco as minhas histórias, falando muito até da minha
+          orientação sexual em alguns momentos, meus medos, meus erros e acertos, e percebendo como eu poderia colaborar
+          na transformação da sociedade e do mundo. Tentando inspirar pessoas, mostrando que elas não estão sozinhas.
+          Então a cada dia eu venho tentando me engajar cada vez mais. Estou numa jornada de aprendizado Ingrid. Assim
+          como todos né?
+          <br><br>
+          Tem até algumas celebridades que essa semana postaram que estão em um momento de ressignificação dos seus
+          preconceitos. Eu também tinha meus preconceitos, eu também julgava, eu ainda estou em desconstrução assim como
+          todas as pessoas, aprendendo sobre o assunto. E eu acho que é mais ou menos isso.
+          <br><br>
+          Então assim, dentro da Ford comecei a perceber a importância disso para a organização, para transformação,
+          para conexão com as pessoas, para gerar um ambiente de cada vez mais agradável de trabalho.
+          <br><br>
+          E externamente também eu tenho um projeto social, eu também mentoro vários jovens e pessoas diversas. Tenho um
+          grupo de voluntários grande, para mentorar em termos de orientação de carreira grupos de vulnerabilidade
+          social. Então o assunto e acabou surgindo dessa forma.
+          <br><br>
+          Eu acho que, é engraçado até, contando uma coisa bem pessoal, há mais ou menos duas semanas eu achei um monte
+          de cartas e textos que escrevia quando eu tinha 20 anos, 18 anos, com todos os meus medos as minhas
+          preocupações. Aí eu fico olhando para trás e falando como superei todas aquelas questões e hoje consigo
+          abertamente vir aqui falar sobre a minha vida, e como isto pode ajudar a gente a transformar de fato a
+          sociedade. Porque apesar de tudo, a gente fala muito nessas discussões de diversidade que um dos primeiros
+          itens é você reconhecer seus privilégios. Apesar de todos os sofrimentos que eu tive, todas as questões que eu
+          tive, eu reconheço que eu tive muitos privilégios. Eu acho que aceitar isso, enfrentar isso, dá força para
+          gente seguir adiante vamos dizer assim.
+        </p>
+        <p class="mt-6 font-bold">
+          Perfeito, então vamos começar. Me fala um pouquinho de como é que a ciência pode ajudar na construção desse
+          pipeline de liderança. E até mesmo às vezes pode ser que tenha alguém no nosso podcast que ainda não saiba, o
+          que que é um pipeline de liderança?
+          <br><br>
+          Então, como a ciência constrói e apoia essa construção e o que é um pipeline?
+        </p>
+        <p class="mt-6 ">
+          Bom, pipeline seria tubulação então é um termo até difícil para traduzir para o português. Poderia ser uma
+          manchete muito bacana “a liderança entrou pelo cano” vamos dizer assim. É engraçado que uma das uma das
+          edições em português, em vez de você botar cano, você botou canudinho. O conceito criado pelo Ram Charan e por
+          outros autores, entende o seguinte: aquela ideia de liderança, e quando a gente fala em liderança vai depender
+          muito do nível hierárquico que você tem, do cargo que você tem, e que vai mudar completamente o escopo. Então
+          é uma das limitações de como a gente trabalha com o tema, como muita gente trabalha com tema liderança, que
+          diz assim: o líder tem que ter isso, tem que ser proativo e tal, mas quando a gente começa a olhar o
+          microscópio, a gente começa a ver que os escopos são muito diferentes. Por exemplo, uma das coisas que você
+          tem, um dos pontos importantes que eles dizem do pipeline de liderança, é você analisar como que a pessoa
+          aloca o tempo. Então assim, claro todo líder, todo profissional, tem que saber alocar bem o tempo, tem que ter
+          uma boa gestão de tempo, fazer o tempo render, isso é genérico.
+          <br><br>
+          Agora, se a gente vai pegar o escopo específico do nível que a pessoa tá, por exemplo, p cara acaba de entrar,
+          “aí eu não tô liberando ninguém”, tá liderando você mesmo e já é difícil pra caramba e tem gente que passa a
+          vida inteira e não consegue liderar a si mesmo, não tem disciplina. Então o tempo para essa pessoa de liderar
+          ela mesma é ela conseguir ter autocontrole, para ter disciplina, para ter horário, para cumprir prazos, que
+          são coisas importantes. Depois é que ela pode começar a pensar outros pontos, aí ela estaria saindo para o
+          segundo nível, quando ela lidera outras pessoas, lidera equipe.
+          <br><br>
+          E essa pessoa que lidera equipes, ela já tem que ter o outro ponto que o primeiro não precisa, de alocação de
+          tempo. Ele precisa por exemplo, alocar o tempo para dar orientação, fazer meio um coaching, fazer uma
+          mentoria, para tirar dúvidas, para dar feedback das equipes.
+          <br><br>
+          Então, a tradução da primeira edição eles chamam de aplicação do tempo, que é horrível. A segunda botou gestão
+          do tempo que é melhorzinho, mas eu particularmente traduzo por conta própria como alocação do tempo. Porque eu
+          pego a grade de horário da pessoa para saber como ela está distribuindo o tempo, ela pode gerenciar muito bem
+          o tempo, mas estar distribuindo mal, então o tempo está mal alocado para o cargo que ela tem.
+          <br><br>
+          Então quando a gente começa a trabalhar, de uma maneira especifica a gente meio que deixa de lado o discurso
+          de administração virou uma coisa meio pop, popularizada, todo mundo sabe falar sobre empreendedorismo, todo
+          mundo sabe o que é uma startup, mas a coisa as vezes tende a ser superficial, ou de achar que a liderança é
+          apenas uma questão motivacional, ou do mindset, ou do modelo mental. Claro que são coisas importantes, mas
+          isso ainda é só uma parte. Quando a gente estuda cientificamente, a gente começa a entender o que é o mindset,
+          psicológico, a gente entende as formas de administrar o tempo, o que vemos de pesquisa sobre isso. Então a
+          gente da um conhecimento mais aprofundado que a ciência tem, para não ser uma coisa muito superficial e
+          genérica como a gente vê acontecer.
+          <br><br>
+          Uma coisa que eu acho muito importante lembrar as pessoas e elas muitas vezes, em inúmeros casos não conseguem
+          perceber: de que a gestão começa exatamente nesse primeiro estágio de fazer gestão sobre si. As pessoas sempre
+          acham que não estão na posição, não tem cargo de liderança, elas sempre acham que é o próximo passo que vai
+          prepará-las ou o cargo que estão que vai. Mas é pelo contrário, se a gente não começa esse desafio por nós,
+          desde o início de liderarmos nós mesmos, o nosso tempo, de liderar as nossas entregas garantindo a qualidade,
+          como a gente vai fazer isso com os demais? Esse mindset é algo muito importante que as pessoas esquecem em
+          grande parte das vezes.
+        </p>
+        <p class="mt-6 font-bold">
+          Perfeito, o que acontece, as vezes com o pessoal novo, acho que um pouco dos problemas que a gente tem de se
+          ter um discursos excessivamente voluntarista e motivador, de achar que administração é só isso, que não tem
+          ciência não tem conhecimento, é você achar que você já olhar para frente sem você seguir os passos. E o
+          pipeline mostra muito bem muito bem que você tem várias etapas, é uma coisa sequencial que você não pode ir
+          queimando etapas, que isso vai aparecer lá na frente. Por isso, você tem até CEOs que tem falhas vindas do
+          início, que não sabem liderar uma equipe.
+        </p>
+        <p class="mt-6 ">
+          Ai a pessoa acha que vai chegar na empresa e virar diretor em 6 meses se não se sente frustrado, ou entra na
+          empresa e se pergunta o que fazer para virar um gerente? Então a resposta básica sempre começa no primeiro
+          nível, que é: faça muito bem aquilo pelo qual você foi contratado. Você tem que entregar resultado, você tem
+          que mostrar para aí você ter legitimidade. Mais ou menos como acontece num time de futebol. Para um jogador
+          ser líder a primeira coisa que ele precisa fazer é jogar bem, porque ele precisa ter credibilidade dos outros.
+          Se ele não tiver é complicado nesse ponto.
+          <br><br>
+          Então isso que você complementou é importante. Primeiro você tem que gerenciar a si mesmo, entregar
+          resultados, para aí acrescentar mais coisas.
+        </p>
+        <p class="mt-6 font-bold">
+          Perfeito. Vamos falar um pouco desses desafios. Quais são os principais desafios na implementação desse
+          modelo?
+        </p>
+        <p class="mt-6 ">
+          Eu acho que a gente tem no ponto de vista estrutural da empresa, você tem duas questões. A primeira, porque o
+          acontece, no pipeline ele fala de um tipo de carreira que a pessoa tem, uma carreira gerencial, de liderança,
+          porque você vai trabalhar com outras pessoas. Então você tem que ter habilidade e interesses, que podem ser
+          desenvolvidos. E muitas vezes a pessoa não quer isso.
+          <br><br>
+          Por exemplo: eu sou um ótimo vendedor, eu gosto de falar com clientes, mas o pessoal gosta tanto do meu
+          trabalho que me promove para ser gerente de vendas. Mas quem disse que eu quero? Quem disse que eu tenho
+          noção? E me promovem para fazer uma coisa que eu nunca mostrei que conseguia fazer.
+          <br><br>
+          As empresas precisam ter a flexibilidade, e a gente fala muito de carreira em Y, ou a pessoa faz a carreira
+          gerencial ou a pessoa faz a carreira de especialista. Eu quero ser vendedor a vida toda, eu quero ser médico
+          para operar, eu quero ser jornalista para sair e fazer matéria. A gente tem que dar espaço para isso. O que
+          fazemos com o vendedor então? Vamos promovê-lo a um super vendedor e não a um gerente de vendas. Clientes
+          difíceis, áreas novas, então você ter na estrutura da empresa, como aproveitar em termos de carreiras, essas
+          duas visões, seja quem vai fazer uma carreira gerencial e quem não vai fazer e vai ser o especialista. A
+          pessoa que vai usar bem o conhecimento técnico.
+          <br><br>
+          Em um segundo ponto, a forma de detectar isso das pessoas. Você tem que ter uma estrutura, você tem que
+          avaliar bem para saber se a pessoa está indo para o caminho certo, se está errado, é aptidão, interesse,
+          analisar as competências. Uma coisa complexa porque você tem muitas variáveis e você tem que ter um mecanismo
+          de avaliação que seja confiável, justo, que acho que é o ponto fundamental.
+        </p>
+        <p class="mt-6 font-bold">
+          Perfeito. E você falou um ponto que eu acho que é um erro fatídico e que por muito tempo, e as empresas ainda
+          caem nele que é a questão de promover o funcionário com alto desempenho, mas baixo potencial para gestão. São
+          pessoas que não tem aptidões para gestão.
+          <br><br>
+          Eu já tive uma experiencia de uma entrevista que eu fiz com um candidato, que ele foi desligado de uma empresa
+          com um cargo gerencial e a vaga que eu tinha era uma vaga de especialista. E aí ele perguntou, aqui onde estou
+          fazendo essa entrevista agora, é possível crescer como especialista? Porque a minha demissão na antiga empresa
+          foi porque eu não correspondi o cargo de gestão, quando eu nem se quer queria, mas por eu exercer muito bem a
+          função foram me promovendo mas quando eu cheguei na função eu não era apto ou não tinha as competências para
+          trabalhar essa posição.
+        </p>
+        <p class="mt-6 ">
+          Acho que esse é um erro que muitas vezes as empresas cometem, mas a gente começa a ver outras formas de
+          carreira, vendo possibilidades de movimentações laterais, aumentando as possibilidades, as metas, trazendo
+          também remunerações mais robustas, mas sem com que a pessoa precise crescer verticalmente.
+          <br><br>
+          Perfeito, acho que teu exemplo ilustra muito bem. Porque quando essa estrutura não existe, para a empresa é um
+          problema sério. Porque você perde duas vezes, você perde um bom vendedor e não ganha um bom gerente de vendas.
+          Então o que estava indo tudo bem, vira dois problemas.
+        </p>
+        <p class="mt-6 font-bold">
+          E que conceitos da academia a gente pode utilizar na implementação desse projeto?
+        </p>
+        <p class="mt-6 ">
+          Bom, vou falar da minha área, comunicação. Eu faço pesquisas acadêmicas especificamente para ver como a
+          comunicação nos vários níveis do pipeline de liderança, da carreira, qual é a exigência, quais as competências
+          especificas de comunicação. E uma delas, que talvez seja um dos pontos mais difíceis de lidar e que a pessoa
+          aprende na prática, mas isso é pouco citado, é quando você vira um líder de quarto nível, você vira líder de
+          uma área. Você tem uma especialidade da empresa. No hospital por exemplo, chefe de CTI ou chefe de Enfermagem,
+          Diretor Comercia, Diretor Industrial. A pessoa na verdade cuidada de uma área especializada inteira.
+          <br><br>
+          E aí, qual a dificuldade desse líder? Ele não tem que ser visto, tem que parar de pensar com um integrante da
+          área e passar a ser um líder da área. E o que isso significa? Não é ter aquelas competências genéricas que são
+          legais, gestão do tempo, comunicação, proatividade, não. É uma coisa especifica da comunicação que eu chamo de
+          líder tradutor de linguagens. Um conceito que eu peguei de teoria do jornalismo.
+          <br><br>
+          Por que ele tem que traduzir a linguagem? Bom, eu sou o chefe de enfermagem de um hospital, o que eu faço? Eu
+          tenho que passar 80% do meu tempo conversando com quem não é da minha área. Eu tenho que primeiro formar, por
+          isso que temos que ter as etapas anteriores, nas etapas anteriores eu tenho que formar líderes
+          multiplicadores, ser meio professor, meio coach, meio mentor, porque aí eu ponho uma equipe e eles vão
+          conduzir minha área.
+          <br><br>
+          O que eu faço, na verdade se fosse alocação do tempo, de cinco dias da semana eu passo quatro fora da minha
+          área. Eu que sou o cara de enfermagem, vou falar com o diretor médico, diretor de CTI, diretor financeiro,
+          diretor de engenharia. Vou passar muito mais tempo nisso porque eu vou vender a minha área para as outras
+          pessoas, vou entender como outras áreas se alinham com a minha, então para isso eu tenho que dominar a
+          comunicação. Não adianta, se eu estou dentro da minha área eu posso falar com termos técnicos. Por exemplo,
+          jornalistas falando sobre termos de redação, engenheiros falando sobre termos industriais, mas você vai falar
+          com o cara do financeiro, de marketing, é grego. Então você tem que saber falar com a linguagem do outro
+          aquilo que você faz. É um exercício complexo, até porque a maioria das pessoas não vê isso.
+          <br><br>
+          Então essa questão do líder funcional para mim, quando mais especializada a empresa é, mais complexa é essa
+          tarefa porque ele vai ter que falar com várias linguagens, com várias pessoas.
+          <br><br>
+          Claro que a gente tem duas maneiras de lidar com isso. Uma é fazer um treinamento de soft skills, treinar
+          comunicação, escuta, interpretação de texto e a gente tem uma segunda questão que são ferramentas que podem
+          ajudar. Eu particularmente gosto muito de ferramentas de apelo visual. Os japoneses fizeram muito isso na
+          época da segunda guerra. Gestão de projetos, qualidade é toda com projetos e outras ferramentas mais recentes
+          como o balanced score card, que eu adoro, e toda essa parte de design thinking, canvas, bmg canvas e tudo que
+          temos nesse sentido. Porque o visual é uma maneira de todo mundo falar a mesma linguagem mais rápido. Então o
+          líder tem que saber dominar todas elas.
+        </p>
+        <p class="mt-6 font-bold">
+          E você falou uma delas que eu acho fantástica, porque ela mostra sinergia entre as áreas que é o canvas. Você
+          consegue entender onde ela começa e as interfaces que ele se liga e tudo num único report, numa única página
+          você consegue ver todas essas interligações.
+          <br><br>
+          Eduardo, esse ponto que você trouxe da questão da comunicação, adentra a todas as áreas, mas eu como RH
+          observo isso bastante como um ponto de maior dificuldade. Eu brinco que o RH fala sua própria linguagem, e só
+          nos entendemos. Com vários termos que só nós entendemos, e você chega na área cliente e ele não entende. Então
+          isso ocorre para todas as áreas, e principalmente as áreas que existe o back, então RH, finanças, tecnologia,
+          onde você tem grandes interfaces com as áreas que são core da empresa, você tem essa necessidade.
+          <br><br>
+          Um ponto que eu acho que vale como uma dica para as pessoas, é começar a estar mais dentro da área cliente. Eu
+          como RH digo isso porque uma das coisas que para mim foi chave de mudança, foi as vezes sair e ao em vez de
+          sentar-se com o RH, sentar-se dentro das áreas. Porque você começa a conhecer um pouco da realidade deles,
+          começa a ouvir o linguajar deles, começa adaptar a sua linguagem e passa a ser mais efetivo além de mostrar
+          proximidade.
+          <br><br>
+          É claro que frente essa pandemia, o presencial agora ele se modificou para esse mundo virtual, mas o que é
+          importante é mostrar-se sempre pronto, perto e acompanhar mesmo que as vezes não seja uma reunião que de fato
+          você vai ter uma interface com cliente, mas você estar ali para ouvir, entender um pouco da dinâmica, como
+          funciona a sua área. Isso facilita muito nessa troca de linguajar.
+        </p>
+        <p class="mt-6 ">
+          Perfeito. Inclusive eu acho um dos termos que você falou, é quando você fala a palavra cliente, que o pessoal
+          não se toca que é o cliente interno. Eu acho isso ótimo porque na verdade isso mostra uma aproximação muito
+          grande. Quando a gente fala da área de vendas, que hoje tem um grande desafio na comunicação, é quando você
+          fala em fazer uma venda consultiva. O vendedor como trabalha por cota, tem um problema porque ele tem que
+          lidar com algo psicológico que pouca gente nota, ele tem que lidar com a ansiedade. Ele tem que fazer 20
+          visitas e fechar 1, ele lida com a ansiedade, com tempo. Nisso ele acha que tem que chegar falando e não
+          propriamente escutando.
+          <br><br>
+          Então eu comparo muito esse papel, até pela palavra cliente, de ser uma venda consultiva que o RH faz. De você
+          ouvir a outra área antes de começar a falar e traduzir sua linguagem para todas as outras áreas. A linguagem
+          tem isso, ela é a forma que você tem para unir. A palavra comunicação vem de comuni, comunidade, você forma
+          uma comunidade. Você por exemplo, quer saber se a pessoa que trabalha em aeroporto, que trabalha em companhia
+          aérea, sabe se você não é a da área se você falar apenas uma palavra: avião. Todo mundo só fala aeronave, se
+          você falar avião vão ver que você não é da área. Você é da área de saúde, você tem que entender uma palavra:
+          glosa, que é quando você faz um pedido de pagamento é ele é negado. Se você fala destrato para alguém de
+          incorporação a pessoa vê que você é da área. Vamos descobrindo essas coisas que temos.
+          <br><br>
+          Tem várias que acho legais, e posso dizer até por experiencia própria, que eu demorei, e por mais que eu
+          trabalhasse com estratégia, mas como minha área acabou ficando muito ligada com capacitação, treinamento, até
+          mesmo com aula de MBA para essa parte em gestão de pessoas, eu demorei um pouco mais do que eu deveria para
+          isso. São coisas que vamos entendendo e aí você consegue apresentar muito melhor o que você tem a somar, seu
+          valor e todas essas coisas. E isso parte por técnicas de comunicação. Você tem que desenvolver escuta ativa,
+          empatia, e por aí vai.
+        </p>
+        <p class="mt-6 font-bold">
+          E um ponto final que você trouxe agora, que eu também acho importante. A comunicação ela também parte pela
+          escuta. As pessoas acham que comunicar é falar, mas é ouvir também. É diálogo, não é monologo.
+        </p>
+        <p class="mt-6 ">
+          Exatamente. Eu escrevi um texto uma vez, que é bastante citado, o Rubem Alves escreveu num texto uma vez:
+          sempre vejo anunciando curso de oratória, nunca vi anunciando curso de escutatória. Seria um curso para você
+          fica quieto e ouvir o outro, então é uma coisa que tem que ser desenvolvida. Eu acabei pegando técnicas para
+          treinar isso, mas é muito mais difícil. Por isso chamamos de escuta ativa. Temos que fazer força para não
+          falar e lidar com as emoções, e aí entra inteligência emocional e várias coisas.
+        </p>
+        <p class="mt-6 font-bold">
+          Nossa, ficaríamos aqui mais muito tempo, mas já vamos nos encaminhar para o final. Queria que você me
+          trouxesse, compartilhasse conosco, essas lições aprendidas sobre aplicações desse conceito, os maiores
+          desafios trazidos pelos alunos em suas empresas origens. Como eles estão fazendo, que dificuldades eles estão
+          lidando e o que você tem trazido como sugestão frente essa prática. Então traz para a gente um pouco do que
+          você tem visto nas salas de aula.
+        </p>
+        <p class="mt-6 ">
+          Bom, vamos lá. Eu gosto muito de uma frase que eu descobri na internet com o Richard que é empresário dessa
+          área de EduTech, que é uma frase falada pelo professor português José Pacheco, que diz: professores do século
+          XX, ensinam alunos do século XXI com técnicas do século XIX. É uma conta que não fecha. Aquela ideia de você
+          ficar, o professor falar, o aluno copiar, fazer uma prova que é você medir a capacidade do aluno escrever o
+          que o professor quer que ele escreva, aquilo acabou. Se você falar que a escola já tem métodos, eu tive o
+          privilégio de ter estudado em um colégio bastante vanguardista nisso, o aplicação da UERJ. Ao invés de você
+          fazer uma redação que é uma coisa técnica, você discutia um tema, a gente escrevia e depois que a gente
+          debatia sobre o tema a gente escrevia de novo. Então você faz uma coisa diferente do que simplesmente ouvir o
+          professor e colocar no papel.
+          <br><br>
+          Isso quando você vai para o MBA, uma educação executiva, se torna mais grave ainda. Porque primeiro a pessoa
+          fica com foco no trabalho a maior parte do tempo. A pessoa tem uma serie de problemas que ela tem que
+          resolver, então aquilo que ela vai ter, que ela vai ter de conhecimento que não agrega, que ela possa pensar
+          de alguma maneira de trabalhar no curto ou médio prazo, é uma coisa que a pessoa já tem uma barreira para
+          aprender. Claro que existem coisas interessantes, e é por isso que a gente diferencia treinamento de
+          desenvolvimento. Treinamento é para agora, desenvolvimento é para frente. Você treina planilhas do Excel e
+          desenvolve lideranças. São competências que tem resultados depois.
+          <br><br>
+          Essa questão de o expositivo ser o primeiro ponto em relação de se aprender. Então eu gosto muito de uma coisa
+          que eu vejo ser interessante, trabalhar com simulação, projeto prático. O próprio aprendizado entre os alunos
+          muda.
+          <br><br>
+          O que acontece, você podia falar no século XIX sala de aula, ou até no século XX todo mundo tinha tempo, hoje
+          as pessoas aprendem de outra maneira. Você não pode querer que a aula fique a mesma que era a 150 anos.
+          <br><br>
+          Eu por exemplo gravei um vídeo que não chegou a 10 minutos sobre BSC. Provavelmente se alguém chegar e
+          assistir meu vídeo, ele vai aprender mais balanced score card do que em meia hora de aula comigo. Porque a
+          aula eu que vou dizer que horas é e a pessoa que vai se adaptar, mas se você tem a oportunidade de aprender a
+          hora que você quer, a hora que melhor se ajusta, a hora que você vai ter foco, então muito melhor.
+          <br><br>
+          Hoje a gente fala muito na educação centrada no aluno, metodologias ativas, mas na prática acaba muitas vezes
+          fiando você falando lá na frente. Se você realmente entende que o processo depende de o aluno ter interesse,
+          você das alternativas nesse ponto. Colocar um desafio pratico para a pessoa fazer, é uma maneira muito grande
+          de aprender.
+          <br><br>
+          Eu por exemplo, quando eu ministro aula sore canvas, eu não explico canvas para eles, mas eu passo 80% do meu
+          tempo para prepara a aula pegando as perguntas do livros, melhorando, deixando mais intuitivas, adaptando para
+          como as pessoas falam, pego feedback de aluno, adapto o modelo, mudo para ser mais intuitivo, então com isso a
+          coisa já está mais ou menos pronta. É aquela frase do Abraham Lincoln, “se me derem oito horas para derrubar
+          uma arvore eu vou passar sete horas afiando o machado”. Então é isso, eu passo a fazer uma pergunta para que a
+          pessoa possa fazer. Para eu não chegar lá e explicar passo a passo o que é para aí a pessoa fazer. Eu já
+          coloco uma coisa meio assim e o pessoal acha que caiu de paraquedas, mas é o que acaba funcionando. Você
+          resgata o conhecimento que pessoa tem dentro dela, o conhecimento prático, e você coloca um desafio para
+          frente para ser resolvido em equipe. Um ajuda o outro nesse ponto e você tem uma aprendizagem entre as
+          pessoas.
+          <br><br>
+          Não da para chegar e dizer que o professor é o detentor de todo conhecimento. Eu tenho que pensar se eu vou
+          falar sobre pipeline de liderança, vou dar uma aula sobre BSC, eu tenho que fazer alguma coisa da minha área
+          que tenha mais informação que os vídeos dos criadores dos modelos. Eu tenho que fazer alguma coisa que seja
+          diferente.
+          <br><br>
+          Como nessa minha área de comunicação eu fiz muito treinamento para vendas, é uma área que as pessoas se dão
+          muito mal de treinar vendedores. O vendedor está com cota, está com tempo em cima, esse é o desafio de
+          entreter. É tudo que chamamos de metodologia ativa.
+        </p>
+        <p class="mt-6 font-bold">
+          Perfeito, acho que o meio acadêmico vem aos poucos repensando isso. O posicionamento do cliente que é o aluno,
+          onde ele deve estar. Porque até então era muito centrado no conteúdo e em sua qualidade, mas pouco centrado na
+          forma que se traz esse conteúdo.
+          <br><br>
+          Por último, para a gente fechar, qual a dica que você daria para as pessoas sobre a implementação de um
+          pipeline de liderança? Que dicas você daria, que você traz de sala de aula, que você observa de mercado, que
+          são eficazes. Claro que não vamos suprir todas as dúvidas, mas uma trilha inicial do que a pessoa deve fazer.
+        </p>
+        <p class="mt-6">
+          Bom, eu acho que tem duas coisas. Primeiro essa ideia inicial de você ter planos de carreira, desenvolvimento
+          de carreira que fique bem claro que a pessoa possa ir pelos dois lados. Por exemplo, a pessoa pode fazer o
+          cargo de especialista, mas as vezes a própria estrutura da empresa não comporta isso, mas que tenha estrutura
+          para a pessoa sair e ser no mínimo um PJ, prestador de serviço. Você pode ter algumas estruturas que você
+          deixe até a pessoa como prestador de serviços, para a pessoa conseguir ter o foco nessa área, o que pode
+          ajudar a própria empresa.
+        </p>
+        <p class="mt-6 font-bold">
+          E hoje as nossas leis trabalhistas começam a trazer alguns aspectos que ajudam nesse sentido.
+        </p>
+        <p class="mt-6">
+          Exatamente. Eu brinco que a terceirização é uma coisa absolutamente simples, em vez de fazer é comprar feito.
+          Para a empresa é isso que acontece.
+          <br><br>
+          Um segundo ponto, é a forma de fazer as avaliações. Montar uma trilha para quem vai seguir a parte gerencial,
+          não descuidando de três aspectos. Você ter como o próprio pipeline de liderança diz, dar uma atenção grande a
+          alocação do tempo, fazer uma avaliação da pessoa até para você ajudar a pessoa a fazer isso.
+          <br><br>
+          Alocação do tempo é diferente de ter gestão do tempo. Gestão do tempo é uma competência que falaram que você
+          tem que usar quando você tem uma demanda grande. Alocação do tempo é como você, quais são suas prioridades.
+          Você pode gerenciar bem seu tempo, mas seu tempo estar mal alocado. Como pode ter gente que aloca bem, mas
+          gerencia mal. Então nesse caso é ver como a pessoa distribui o tempo e se ela dedica, e isso a gente nota
+          muito bem no comportamento da pessoa. Essa parte de alocação do tempo, eu não vejo como uma prioridade tão
+          grande. Ram Charan diz que é um terço da avaliação.
+          <br><br>
+          E um terceiro, é o sistema de crenças e valores. Valores corporativos, valor é aquilo que você entrega para o
+          cliente. O que chamamos de sistema de crenças e valores é a pessoa se ver como líder, valorizar o sucesso dos
+          outros. Então os valores são difíceis de avaliar porque são intangíveis. Você precisa ver o comportamento da
+          pessoa para tentar entender o mindset, o modelo mental, de como isso funciona. Então, o Ram Charan coloca que
+          seriam as competências, skills, habilidade, você tem alocação do tempo e valores.
+          <br><br>
+          Dessas competências, eu justamente por ser da minha área, eu dou destaque para as habilidades de comunicação.
+          Eu acho que elas são essenciais. Eu traduzi o manual do novo gerente e o cara falava coisas tão simples, o que
+          um gestor precisa saber? Planejamento e comunicação. Tudo que a gente faz acaba caindo lá, que é a teoria e a
+          prática. Eu chamo porque e e daí. São coisas que você vai fazer, o planejamento é mais para hard skills e você
+          tem que ter comunicação para levar esse planejamento feito pelas outras pessoas. Se a pessoa planeja sozinho,
+          ele é um cara de carreira de especialista. Eu preciso pegar meu planejamento e minha equipe precisa comprar
+          essa ideia.
+          <br><br>
+          Eu acho que esses três pontos, as competências, a importância da comunicação e a alocação do tempo, do sistema
+          de crenças e valores como avaliação ou até mesmo para promoção, eu acho que são os pontos importantes que
+          destaco. Em geral é onde vamos ver o pipeline de liderança funcionar ou não.
+        </p>
+
+
+        <p class="mt-6">
+          Assista ao conteúdo clicando
+          <a class="cor-blue-one font-black uppercase" href="https://www.youtube.com/watch?v=g-f52X1Sfl0&t=2s"
+            target="_blank">aqui</a>.
+        </p>
+
+        <div class="box-spotify">
+          <a class="flex gap-4 items-center"
+            href="https://open.spotify.com/episode/0lLxwNzRGd0wi8vzr3j0uA?si=5e873892e6224747"
+            target="_blank">
+            <i class="fa-brands fa-spotify text-7xl"></i>
+            <p>Encontre esse bate-papo do<br>
+              Clave Talks, entre outros no Spotify</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Compartilhe nas Redes Sociais ///////////////-->
+    <!--<section class="mt-12">
+      <p class="text-center">Compartilhe este conteúdo!</p>
+      <div class="md:flex justify-center gap-4 mt-4">
+        <a class="artigo-social facebook" href="" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+          <p class="w-28">Facebook</p>
+        </a>
+        <a class="artigo-social twitter" href="" target="_blank">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <p class="w-28">X</p>
+        </a>
+        <a class="artigo-social linkedin" href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p class="w-28">LinkedIn</p>
+        </a>
+      </div>
+    </section>-->
+
+    <section class=" mt-24">
+      <div class="flex justify-center md:flex-row flex-col items-center gap-4 mt-8">
+        <div class="photo-container w-40 h-40">
+          <img class="photo" src="/blog/img/assinaturas/ingrid.jpeg">
+        </div>
+        <div class="bg-gray-1 p-6 md:m-0 m-4 rounded-2xl md:w-1/2">
+          <h2 class="font-extrabold text-3xl mb-4">Ingrid S. Emerick - Head De Talent Acquisition</h2>
+          <p>
+            Partner & Head de Talent Acquisition na Clave.
+            Psicóloga com MBA pelo IBMEC em Gestão de Empresas e MBA UFF
+            em Gestão de Pessoas. Possui mais de 15 anos de experiência,
+            foi Coordenadora de Gestão de Talentos da América Latina na GSK.
+            Atua em projetos de Assessment de profissionais e executivos,
+            nacionais e internacionais, em empresas de grande porte como
+            TV Globo, Vale e Sulamérica. Certificação em Coach Executivo pela
+            Academia Brasileira de Coaching. Formação em DISC pela Extended DISC.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Paginação //////////////-->
+    <section class="flex justify-center gap-4 mt-16 paginacao">
+      <a class="bg-pink" href="/podcast/pag-3.html">voltar</a>
+    </section>
+
+
+  </main>
+
+
+  <!--///////////// FOOTER //////////////-->
+  <footer class="md:w-full mt-16">
+    <section class="footer-one">
+      <div class="grid md:grid-cols-4 gap-4">
+        <div>
+          <figure>
+            <img src="/global/img/logos/logo-v.png" class="w-28 pb-7" alt="Logo Clave">
+          </figure>
+          <div>
+            <p class="font-extrabold pb-2">Localização</p>
+            <p class="text-sm">
+              <i class="fa-solid fa-location-dot"></i>
+              Rua Primeiro de Março, 07 - salas 801 a 804
+            </p>
+            <p class="text-sm">Centro - Rio de Janeiro-RJ</p>
+            <p class="text-sm">CEP: 20010-000</p>
+          </div>
+          <div class="flex flex-col text-sm pt-5">
+            <p class="font-extrabold pb-2">Contatos</p>
+            <a href="tel:552122171500"><i class="fa-solid fa-phone"></i> (21) 2217-1500</a>
+            <a href="https://api.whatsapp.com/send?phone=5521999524559" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i> (21) 99952-4559</a>
+            <a href="mailto:contato@clavegroup.com.br"><i class="fa-solid fa-at"></i>
+              contato@clavegroup.com.br</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Sobre a Clave</p>
+          <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+          <!--<a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>-->
+          <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+          <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Produtos</p>
+          <p class="font-bold pb-2">Para você que busca Consultoria</p>
+          <div class="flex flex-col">
+            <a href="/produtos/consultoria/assessment.html">&nbsp;&nbsp; Assessment</a>
+            <a href="/produtos/consultoria/capacitacao.html">&nbsp;&nbsp; Capacitação</a>
+            <a href="/produtos/consultoria/mentoria.html">&nbsp;&nbsp; Mentoria</a>
+            <a href="/produtos/consultoria/selecao.html">&nbsp;&nbsp; Projetos de Seleção</a>
+            <a href="/produtos/consultoria/talent-acquisiton.html">&nbsp;&nbsp; Terceirização do Processo de Talent
+              Acquisition - RPO</a>
+          </div>
+          <p class="font-bold pt-4 pb-2">Para você que busca plataforma<br> personalizada HR Tech</p>
+          <div class="flex flex-col">
+            <a href="/produtos/hr-tech/assessment360.html">&nbsp;&nbsp; Assessment 360</a>
+            <a href="/produtos/hr-tech/assessment-customizado.html">&nbsp;&nbsp; Assessment Customizado</a>
+            <a href="/produtos/hr-tech/data-science.html">&nbsp;&nbsp; Assessment Data Science</a>
+            <a href="/produtos/hr-tech/fit-de-comportamentos.html">&nbsp;&nbsp; Assessment Fit de Comportamentos</a>
+            <a href="/produtos/hr-tech/mindset-digital.html">&nbsp;&nbsp; Assessment Mindset Digital</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <a class="font-extrabold pb-2" href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+          <a class="font-extrabold pb-2" href="/blog/blog-1.html">Blog</a>
+          <a class="font-extrabold pb-2">Fale Conosco</a>
+          <a href="/fale-conosco/contato.html">&nbsp;&nbsp; Contato</a>
+          <a href="/fale-conosco/denuncia.html">&nbsp;&nbsp; Denúncia</a>
+        </div>
+      </div>
+      <!--/redes sociais/-->
+      <div class="cor-blue-one">
+        <h5 class="text-center font-bold">Acompanhe as nossas redes sociais</h5>
+        <div class="flex justify-center items-center gap-6 text-2xl pt-3">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </section>
+    <!--/ Footer 2/-->
+    <section class="text-center p-4">
+      <p class="text-sm">Copyright © 2024 · Clave © Todos os direitos reservados</p>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".missao", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodCast - O Cuidado com os
+    Colaboradores no Processo de
+    Retomada aos Escritórios</title>
+
+  <!-- Favicon -->
+  <link href="/global/img/logos/favicon.ico" rel="icon">
+
+  <!-- Empresa -->
+  <link rel="stylesheet" href="/podcast/css/podcast.css" />
+
+  <!--/ Tailwind /-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!--/ Fonts Icons Google /-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+  <script src="https://kit.fontawesome.com/260c512de2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--/ Menu Responsive/-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="menu" class="menu-responsive">
+    <div class="md:inline flex justify-between">
+      <a href="/index.html"><img class="logo" src="/global/img/logos/logo-h.png"></a>
+      <div class="menu-toggle"></div>
+    </div>
+    <nav>
+      <ul class=" ul-reset">
+        <li class="droppable">
+          <a href="#">Sobre a Clave</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">apartment</i>
+                  <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+                </li>
+                <li><a href="/sobre-a-clave/empresa.html"><img src="/global/img/menu/img-1.jpeg"></a> </li>
+              </ul>
+              <!--<ul class="ul-reset">
+                    <li class="flex items-center gap-2">
+                      <i class="material-symbols-rounded bg-blue-one">handshake</i>
+                      <a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>
+                    </li>
+                    <li><a href="/sobre-a-clave/seja-parceiro.html"><img src="/global/img/menu/img-6.png"></a></li>
+                  </ul>-->
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract</i>
+                  <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+                </li>
+                <li><a href="/sobre-a-clave/politica-de-privacidade.html"><img src="/global/img/menu/img-2.jpeg"></a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract_edit</i>
+                  <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+                </li>
+                <li><a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf"><img src="/global/img/menu/img-3.jpeg"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Produtos</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca Consultoria</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">hub</i>
+                  <a href="/produtos/consultoria/assessment.html">Assessment</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/capacitacao.html">Capacitação</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/mentoria.html">Mentoria</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/selecao.html">Projetos de Seleção</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/talent-acquisiton.html">Terceirização do Processo de Talent
+                    Acquisition - RPO</a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca plataforma personalizada HR Tech</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">sync_saved_locally</i>
+                  <a href="/produtos/hr-tech/assessment360.html">Assessment 360</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/assessment-customizado.html">Assessment Customizado</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/data-science.html">Assessment Data Science</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/fit-de-comportamentos.html">Assessment Fit de Comportamentos</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/mindset-digital.html">Assessment Mindset Digital</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li>
+          <a href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Blog</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/blog/pag-1.html">Posts</a>
+                </li>
+                <li><a href="/blog/pag-1.html"><img src="/global/img/menu/img-7.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/podcast/pag-1.html">PodCast</a>
+                </li>
+                <li><a href="/podcast/pag-1.html"><img src="/global/img/menu/img-8.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Fale Conosco</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/fale-conosco/contato.html">Contato</a>
+                </li>
+                <li><a href="/fale-conosco/contato.html"><img src="/global/img/menu/img-4.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/fale-conosco/denuncia.html">Denúncia</a>
+                </li>
+                <li><a href="/fale-conosco/denuncia.html"><img src="/global/img/menu/img-5.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--<div id="tradutor">
+          <a href="">
+            <img src="/global/img/menu/icon-brasil.png">
+            <p>PT</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/ico-usa.png">
+            <p>EN</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/icon-es.png">
+            <p>ES</p>
+          </a>
+        </div>-->
+      <a href="https://portal.claveconsultoria.com.br/" target="_blank" class="bg-purple btn-menu">
+        <p>acesso ao portal</p>
+      </a>
+      <div class="cor-green">
+        <div class="flex justify-center items-center gap-3 text-xl pt-5">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+
+  <header>
+    <div class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <figure class="flex justify-center mt-32">
+          <img class="rounded-3xl" src="/podcast/2020/img/Renata-Filardi.png">
+        </figure>
+        <!--/*/-->
+        <div class="flex justify-center gap-2 mt-6">
+          <a class="tag bg-purple" href="#">#liderança</a>
+          <a class="tag bg-green" href="#">#podcast</a>
+        </div>
+        <!--/*/-->
+        <div class="mt-8">
+          <h3 class="text-4xl font-black">
+            O Cuidado com os
+            Colaboradores no Processo de
+            Retomada aos Escritórios
+          </h3>
+        </div>
+        <!--/*/-->
+        <div class="mt-4">
+          <p class="text-xs">23 SET, 2020</p>
+          <p class="text-sm">Publicado por: Ingrid Emerick e Renata Filardi</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-12">
+    <section class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <p class="mt-6">
+          Em <a class="cor-blue-one font-black"
+            href="https://www.nytimes.com/2020/08/13/well/family/coronavirus-pandemic-college-campuses-student-health.html"
+            target="_blank">entrevista</a>
+          ao The New York Times (NYT), Preeti Malani, especialista em doenças infecciosas e chefe de saúde da
+          Universidade de Michigan, afirma que é muito difícil estruturar um plano único de reabertura universal, já que
+          as particularidades de cada setor ou de cada região devem ser levadas em consideração. “Reabrir é muito
+          complicado. Não há modelo, nem manual”, diz.
+        </p>
+        <p class="mt-6">
+          Qual o cuidado estamos tendo com os colaboradores durante este período?
+        </p>
+        <p class="mt-6">
+          Essa semana trouxemos <a class="cor-blue-one font-black"
+            href="https://www.linkedin.com/in/renata-filardi-59a4a91/" target="_blank">Renata Filardi</a>,
+          Head of Human Resources na FQM, para uma conversa sobre os desafios enfrentados diante o processo de retomada
+          aos escritórios pelo qual a empresa está passando.
+        </p>
+        <p class="mt-6">
+          Leia abaixo a entrevista na íntegra!
+        </p>
+
+        <p class="mt-6 font-bold italic">
+          Olá amigos da Clave, é muito bom ter todos vocês aqui conosco. Sejam muito bem-vindos a mais um podcast.
+          <br><br>
+          Hoje estamos aqui com uma convidada muito querida. Economista, coach executiva, com pós-graduação em gestão de
+          pessoas e em neurociência, Renata Filardi. Atua a mais de 20 anos na área de recursos humanos e hoje é gerente
+          executiva de recursos humanos na Farmoquímica mas também já atuou em mais de 9 anos na ABRH onde foi diretora,
+          vice-presidente e atualmente faz parte do Conselho.
+          <br><br>
+          Renata, muito bom ter você aqui conosco, é um prazer enorme. Seja bem-vinda.
+        </p>
+        <p class="mt-6 ">
+          Eu que agradeço Ingrid, super obrigada pelo convite. Sempre bom estarmos falando das coisas que a gente vem
+          fazendo no trabalho. Fazendo essa troca que é super bacana que acho que só enriquece a gente. Você que é uma
+          super conhecida e parceira, obrigada pelo convite.
+        </p>
+        <p class="mt-6 font-bold italic">
+          Bom, vamos falar um pouco então da vivência. Tivemos um ano que não foi um ano muito fácil, na verdade, um ano
+          que ninguém tinha no planejamento estratégico, tivemos que nos reinventar, inventar novamente e a gente agora
+          volta com algumas retomadas frente aos escritórios. Então conta para a gente, como foi esta tomada de decisão
+          que vocês fizeram e que critérios vocês consideraram pra poder fazer a retomada aos escritórios?
+        </p>
+        <p class="mt-4 ">
+          Eu acho que a parte técnica é a parte mais fácil. Porque você definir um protocolo, faz uma comissão de crise,
+          define um protocolo, tem todas as ações de retomada e você consegue fazer essa gestão no dia a dia.
+          <br><br>
+          Mas eu acho que o ponto principal, o principal pilar é a segurança. Seja da segurança da saúde das pessoas,
+          seja segurança mental das pessoas, seja a segurança financeira.
+          <br><br>
+          Eu acho que a primeira coisa foi a saúde das pessoas, só vai voltar a trabalhar realmente quem tem segurança
+          para trabalhar. A gente trabalha numa indústria farmacêutica então tive áreas que não pararam de fabricar em
+          momento algum e ai teve toda uma mudança em termos de segurança do dia a dia. Seja de tomar a temperatura, de
+          usar a máscara, de mudar todo refeitório, colocar o ônibus para as pessoas virem porque a gente não tinha esse
+          transporte. Então toda essa parte técnica foi feita, dando segurança para quem já estava no trabalho no dia a
+          dia.
+          <br><br>
+          O pessoal do BackOffice trabalhou o tempo inteiro em home office, então era segurança física de poder estar se
+          locomovendo novamente, tinha medo de locomoção, como é que eu vou entrar encontrar gente no escritório, como
+          eu vou fazer na minha alimentação porque eu almoçava em restaurante e não tem como eu almoçar em casa.
+          <br><br>
+          Todo esse olhar de saúde física e mental era muito importante, e também a financeira que era: se você não
+          tiver coragem de voltar para trabalhar, você vai ficar em casa porque não vai ter corte de benefício, não vai
+          ter corte de salário. As pessoas que estão trabalhando menos horas também não vão ter, então acho que é um
+          tripé de segurança, física, mental e financeira. Isso que a gente quis passar o tempo inteiro e continua
+          fazendo isso.
+          <br><br>
+          Hoje eu tenho gente que não está trabalhando e que já poderia estar, mas não tá porque tem medo ou porque tem
+          o idoso na família ou porque tem filho pequeno escola ainda não voltou. Essa pessoa vai ficar desassistida?
+          Não! Ela vai continuar trabalhando home office e a gente vai dar todo suporte para ela, mas eu tenho um grupo
+          também que já voltou e tem aquele outro grupo que não pode voltar porque é o grupo de risco, mas que adoraria
+          voltar. A gente tem todo um cenário que a gente precisa ficar administrando ao longo desse tempo, mas eu acho
+          que assim, o principal é a segurança, seja mental, física ou financeira.
+        </p>
+        <p class="mt-6 font-bold italic">
+          Você falou de vários pilares e trouxe algumas situações bem delicadas, de grupo de risco, a questão da Saúde
+          Mental. Se você pudesse elencar, qual foi a principal dificuldade encontrada durante o processo de retomada? O
+          que você percebeu que foi a situação mais delicada?
+        </p>
+        <p class="mt-4 ">
+          Na verdade, são três pontos que são importantes. O primeiro ponto é da comunicação. Você precisa estar
+          comunicando o tempo inteiro e dizendo para as pessoas que a gente não sabe de tudo o tempo inteiro, que a
+          gente tá construindo isso com todo mundo. Porque isso nunca aconteceu, a gente nunca passou por essa
+          experiência. Ninguém sabe como fazer.
+          <br><br>
+          Isso foram ações que a gente foi construído no dia a dia e que a gente pode errar. Algumas ações, olha vamos
+          voltar hoje, mas se amanhã aumentar a contaminação vai todo mundo voltar para casa, então isso não significa
+          que daqui para frente tá todo mundo trabalhando no escritório, a gente volta para casa de novo.
+          <br><br>
+          Então acho que a comunicação de todo dia a gente dizer o que que tá acontecendo e como vai acontecer, dizer
+          pra todo mundo que a gente não sabe de tudo e principalmente ter os executivos e o próprio RH também não como
+          donos da verdade, porque a gente pensa em algumas ações e nem sempre são os melhores.
+          <br><br>
+          A gente tem que conversar muito com todo mundo. Eu acho que essas foram ações muito importantes, de a gente
+          saber que cada um precisa entender. A gente precisa saber um outro ponto que eu acho muito importante também
+          que é entender que cada pessoa é diferente.
+          <br><br>
+          Agora eu não posso dizer: para mim é muito fácil voltar, não tem problema para mim, minhas filhas tem 20 anos,
+          ficam sozinhas em casa, meu marido também tá tranquilo, não tem ninguém do grupo de risco e minha mãe mora na
+          casa dela então para mim é mais seguro. Mas eu tenho gente que não tem esse mesmo pensamento que eu, então a
+          gente entender o contexto de todos os funcionários, entender como eles funcionam para poder ter esse olhar um
+          pouco mais humano e mais personalizado.
+        </p>
+        <p class="mt-6 font-bold italic">
+          Você falou sobre, por exemplo, se estivesse dando errado, voltaria todo mundo para casa. Que indicadores vocês
+          foram acompanhando então, para poder garantir a segurança desse processo?
+        </p>
+        <p class="mt-4 ">
+          Primeiro a gente tem gente trabalhando no o Brasil inteiro. Eu tenho gente trabalhando em fábrica que não pode
+          parar, eu tenho gente trabalhando no campo com os médicos, que são os representantes que fazem a propaganda
+          médica, e aí por exemplo, eles visitam hospitais e eles foram proibidos de visita, porque é um alto risco de
+          contaminação. Eu tenho pessoal BackOffice que fica nos escritórios. São públicos diferentes e eu tenho que
+          mapear como está a contaminação nesses três lugares.
+          <br><br>
+          Então, no campo essas pessoas estão sendo contagiadas? Hoje já tem visitação a médico, essas pessoas estão com
+          grande exposição, como está isso? Então a gente monitora grupo de risco, grupo de idade, gestante, a família,
+          quem está suspeito, quem não está suspeito, quem realmente está contaminado.Temos todo esse olhar, como é que
+          estão as cidades também, o nível de contaminação das cidades, para saber: olha, na Bahia você pode visitar,
+          mas o Rio de Janeiro não. E aí esse olhar, que a gente faz semanalmente olhando e fazendo fechamento com que a
+          gente traz da semana passada para poder saber quais ações da próxima semana.
+          <br><br>
+          E o nível de contaminação interna, que foi super pequeno. A gente tem hoje 1.500 colaboradorese tivemos mais
+          ou menos 5% da população que pegou coronavirus, sendo que a grande maioria no começo, nos dois primeiros meses
+          quando a gente teve um pico maior. Agora já ta bem mais tranquilo.
+          <br><br>
+          Mas isso é um problema porque no momento que as pessoas voltam e elas entram na rotina, elas começam a abrir a
+          guarda e aí já não querem mais ficar com a máscara sentados no escritório, já chega fulano e dá um abraço, já
+          querem ficar juntos no refeitório, vão todos almoçar juntos no restaurante, então começa abrir a guarda e ai a
+          gente tem um problema que pode ser aquele aumento de novo da contaminação.
+          <br><br>
+          Temos que ficar o tempo inteiro comunicando, para que: lembra a gente... Agora mesmo acabei de receber um
+          e-mail de uma colaboradora de Pernambuco, dizendo que essa semana é 22% de aumento de contaminação na cidade
+          de Recife. Gente precisamos usar as máscaras, tem que fazer tudo certinho, então ela mesma foi proativa em
+          pegar a lista de todos os colaboradores passar. Falei poxa, parabéns, Therezinha, você arrebentou.
+          <br><br>
+          Vamos incentivar, mais ainda essa comunicação. Mas é isso, é uma coisa diária que a gente tem que estar
+          olhando para a gente mesmo. Porque a gente que pode ser o vetor de contaminação né.
+        </p>
+        <p class="mt-6 font-bold italic">
+          Vamos lá, você tem alguma dica que você daria ou lições que você vem aprendendo? Porque você mesmo falou
+          assim: a gente está aprendendo né, não temos todas as respostas. Que dicas você deixaria ou que lições você
+          deixaria para as empresas que estão passando, agora, por essa retomada?
+        </p>
+        <p class="mt-4 ">
+          Eu acho que assim, é possível retomar. Contanto que você tenha todas as ações de segurança possíveis porque é
+          importante isso.
+          <br><br>
+          Eu acho que, pontos importantes: Comunicação efetiva de tudo que tá acontecendo com as ações que a empresa
+          está tomando, a comunicação de como a gente não pode esquecer de agir no dia a dia porque a gente vê isso
+          constantemente no escritório, que eu não passei álcool em gel na mão, eu fui ali e tirei a máscara para falar,
+          eu tô junto cafezinho e não pode. Isso tem que ser o tempo inteiro reforçando.
+          <br><br>
+          Para os gestores e executivos, eu acho que é muito importante eles se colocarem no lugar do outro porque a
+          gente tem realidades diferentes. Eu às vezes entro no meu carro sozinho, me desloco sozinho, paro na garagem,
+          subo e me sento na minha sala. É muito mais fácil. Mas e quem pega o BRT cheio de gente? Quem pega o trem?
+          Quem pega um ônibus? Então se põe no lugar do outro, quem tem uma filha pequena e não pode deixar? Será que
+          esses casos, como é que a gente age?
+          <br><br>
+          Não, vamos deixar em casa, home office, a pessoa pode desenvolver o trabalho dela da melhor forma. Se for da
+          produção não tem como, a pessoa tem que ir. Mas dar todo suporte para que as pessoas consigam trabalhar. Acho
+          que esse é o ponto principal. Comunicação e escutar as pessoas entender como é que as pessoas estão se
+          sentindo.
+        </p>
+        <p class="mt-6 font-bold italic">
+          Renata, muito obrigada por esse encontro, por esse bate-papo, pela troca da sua experiência. Eu tenho certeza
+          que outras empresas ao escutar você, vão se sentir aí, pelo menos com algumas trilhas já possíveis de como
+          saber, como começar né esses primeiros passos.
+          <br><br>
+          Então muito obrigada pelo seu tempo, pela sua disponibilidade e pela parceria de sempre. Muito bom ter você
+          aqui com a gente no canal da Clave.
+        </p>
+        <p class="mt-4 ">
+          Eu que agradeço estar aqui podendo falar um pouquinho de como estamos trabalhando na FQM e aprendendo todo
+          dia. Para a gente, que estamos vivenciando isso é fantástico porque é experiencia e aprendizado e daqui pra
+          frente vamos tirando de letra.
+        </p>
+       
+        <p class="mt-6">
+          Assista ao conteúdo clicando
+          <a class="cor-blue-one font-black uppercase" href="https://www.youtube.com/watch?v=-Negz3SgLg8"
+            target="_blank">aqui</a>.
+        </p>
+
+        <div class="box-spotify">
+          <a class="flex gap-4 items-center"
+            href="https://open.spotify.com/episode/2ADL7tFVRbau6HqW2skrgL?si=f10cabbdf1104430"
+            target="_blank">
+            <i class="fa-brands fa-spotify text-7xl"></i>
+            <p>Encontre esse bate-papo do<br>
+              Clave Talks, entre outros no Spotify</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Compartilhe nas Redes Sociais ///////////////-->
+    <!--<section class="mt-12">
+      <p class="text-center">Compartilhe este conteúdo!</p>
+      <div class="md:flex justify-center gap-4 mt-4">
+        <a class="artigo-social facebook" href="" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+          <p class="w-28">Facebook</p>
+        </a>
+        <a class="artigo-social twitter" href="" target="_blank">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <p class="w-28">X</p>
+        </a>
+        <a class="artigo-social linkedin" href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p class="w-28">LinkedIn</p>
+        </a>
+      </div>
+    </section>-->
+
+    <section class=" mt-24">
+      <div class="flex justify-center md:flex-row flex-col items-center gap-4 mt-8">
+        <div class="photo-container w-40 h-40">
+          <img class="photo" src="/blog/img/assinaturas/ingrid.jpeg">
+        </div>
+        <div class="bg-gray-1 p-6 md:m-0 m-4 rounded-2xl md:w-1/2">
+          <h2 class="font-extrabold text-3xl mb-4">Ingrid S. Emerick - Head De Talent Acquisition</h2>
+          <p>
+            Partner & Head de Talent Acquisition na Clave.
+            Psicóloga com MBA pelo IBMEC em Gestão de Empresas e MBA UFF
+            em Gestão de Pessoas. Possui mais de 15 anos de experiência,
+            foi Coordenadora de Gestão de Talentos da América Latina na GSK.
+            Atua em projetos de Assessment de profissionais e executivos,
+            nacionais e internacionais, em empresas de grande porte como
+            TV Globo, Vale e Sulamérica. Certificação em Coach Executivo pela
+            Academia Brasileira de Coaching. Formação em DISC pela Extended DISC.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Paginação //////////////-->
+    <section class="flex justify-center gap-4 mt-16 paginacao">
+      <a class="bg-yellow" href="">1</a>
+      <a class="bg-yellow" href="/podcast/2020/post-27.08.20.html">2</a>
+      <a class="bg-yellow" href="/podcast/2020/post-20.08.20.html">3</a>
+      <a class="bg-pink" href="/podcast/pag-3.html">voltar</a>
+    </section>
+
+
+  </main>
+
+
+  <!--///////////// FOOTER //////////////-->
+  <footer class="md:w-full mt-16">
+    <section class="footer-one">
+      <div class="grid md:grid-cols-4 gap-4">
+        <div>
+          <figure>
+            <img src="/global/img/logos/logo-v.png" class="w-28 pb-7" alt="Logo Clave">
+          </figure>
+          <div>
+            <p class="font-extrabold pb-2">Localização</p>
+            <p class="text-sm">
+              <i class="fa-solid fa-location-dot"></i>
+              Rua Primeiro de Março, 07 - salas 801 a 804
+            </p>
+            <p class="text-sm">Centro - Rio de Janeiro-RJ</p>
+            <p class="text-sm">CEP: 20010-000</p>
+          </div>
+          <div class="flex flex-col text-sm pt-5">
+            <p class="font-extrabold pb-2">Contatos</p>
+            <a href="tel:552122171500"><i class="fa-solid fa-phone"></i> (21) 2217-1500</a>
+            <a href="https://api.whatsapp.com/send?phone=5521999524559" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i> (21) 99952-4559</a>
+            <a href="mailto:contato@clavegroup.com.br"><i class="fa-solid fa-at"></i>
+              contato@clavegroup.com.br</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Sobre a Clave</p>
+          <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+          <!--<a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>-->
+          <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+          <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Produtos</p>
+          <p class="font-bold pb-2">Para você que busca Consultoria</p>
+          <div class="flex flex-col">
+            <a href="/produtos/consultoria/assessment.html">&nbsp;&nbsp; Assessment</a>
+            <a href="/produtos/consultoria/capacitacao.html">&nbsp;&nbsp; Capacitação</a>
+            <a href="/produtos/consultoria/mentoria.html">&nbsp;&nbsp; Mentoria</a>
+            <a href="/produtos/consultoria/selecao.html">&nbsp;&nbsp; Projetos de Seleção</a>
+            <a href="/produtos/consultoria/talent-acquisiton.html">&nbsp;&nbsp; Terceirização do Processo de Talent
+              Acquisition - RPO</a>
+          </div>
+          <p class="font-bold pt-4 pb-2">Para você que busca plataforma<br> personalizada HR Tech</p>
+          <div class="flex flex-col">
+            <a href="/produtos/hr-tech/assessment360.html">&nbsp;&nbsp; Assessment 360</a>
+            <a href="/produtos/hr-tech/assessment-customizado.html">&nbsp;&nbsp; Assessment Customizado</a>
+            <a href="/produtos/hr-tech/data-science.html">&nbsp;&nbsp; Assessment Data Science</a>
+            <a href="/produtos/hr-tech/fit-de-comportamentos.html">&nbsp;&nbsp; Assessment Fit de Comportamentos</a>
+            <a href="/produtos/hr-tech/mindset-digital.html">&nbsp;&nbsp; Assessment Mindset Digital</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <a class="font-extrabold pb-2" href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+          <a class="font-extrabold pb-2" href="/blog/blog-1.html">Blog</a>
+          <a class="font-extrabold pb-2">Fale Conosco</a>
+          <a href="/fale-conosco/contato.html">&nbsp;&nbsp; Contato</a>
+          <a href="/fale-conosco/denuncia.html">&nbsp;&nbsp; Denúncia</a>
+        </div>
+      </div>
+      <!--/redes sociais/-->
+      <div class="cor-blue-one">
+        <h5 class="text-center font-bold">Acompanhe as nossas redes sociais</h5>
+        <div class="flex justify-center items-center gap-6 text-2xl pt-3">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </section>
+    <!--/ Footer 2/-->
+    <section class="text-center p-4">
+      <p class="text-sm">Copyright © 2024 · Clave © Todos os direitos reservados</p>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".missao", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+
+</html>
