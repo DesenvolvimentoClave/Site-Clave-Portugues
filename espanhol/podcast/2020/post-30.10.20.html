@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodCast - Inovação e Sustentabilidade:
+    Como Conectar Pessoas com a
+    Estratégia</title>
+
+  <!-- Favicon -->
+  <link href="/global/img/logos/favicon.ico" rel="icon">
+
+  <!-- Empresa -->
+  <link rel="stylesheet" href="/podcast/css/podcast.css" />
+
+  <!--/ Tailwind /-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!--/ Fonts Icons Google /-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+  <script src="https://kit.fontawesome.com/260c512de2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--/ Menu Responsive/-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="menu" class="menu-responsive">
+    <div class="md:inline flex justify-between">
+      <a href="/index.html"><img class="logo" src="/global/img/logos/logo-h.png"></a>
+      <div class="menu-toggle"></div>
+    </div>
+    <nav>
+      <ul class=" ul-reset">
+        <li class="droppable">
+          <a href="#">Sobre a Clave</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">apartment</i>
+                  <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+                </li>
+                <li><a href="/sobre-a-clave/empresa.html"><img src="/global/img/menu/img-1.jpeg"></a> </li>
+              </ul>
+              <!--<ul class="ul-reset">
+                    <li class="flex items-center gap-2">
+                      <i class="material-symbols-rounded bg-blue-one">handshake</i>
+                      <a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>
+                    </li>
+                    <li><a href="/sobre-a-clave/seja-parceiro.html"><img src="/global/img/menu/img-6.png"></a></li>
+                  </ul>-->
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract</i>
+                  <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+                </li>
+                <li><a href="/sobre-a-clave/politica-de-privacidade.html"><img src="/global/img/menu/img-2.jpeg"></a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract_edit</i>
+                  <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+                </li>
+                <li><a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf"><img src="/global/img/menu/img-3.jpeg"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Produtos</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca Consultoria</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">hub</i>
+                  <a href="/produtos/consultoria/assessment.html">Assessment</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/capacitacao.html">Capacitação</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/mentoria.html">Mentoria</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/selecao.html">Projetos de Seleção</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/talent-acquisiton.html">Terceirização do Processo de Talent
+                    Acquisition - RPO</a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca plataforma personalizada HR Tech</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">sync_saved_locally</i>
+                  <a href="/produtos/hr-tech/assessment360.html">Assessment 360</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/assessment-customizado.html">Assessment Customizado</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/data-science.html">Assessment Data Science</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/fit-de-comportamentos.html">Assessment Fit de Comportamentos</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/mindset-digital.html">Assessment Mindset Digital</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li>
+          <a href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Blog</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/blog/pag-1.html">Posts</a>
+                </li>
+                <li><a href="/blog/pag-1.html"><img src="/global/img/menu/img-7.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/podcast/pag-1.html">PodCast</a>
+                </li>
+                <li><a href="/podcast/pag-1.html"><img src="/global/img/menu/img-8.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Fale Conosco</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/fale-conosco/contato.html">Contato</a>
+                </li>
+                <li><a href="/fale-conosco/contato.html"><img src="/global/img/menu/img-4.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/fale-conosco/denuncia.html">Denúncia</a>
+                </li>
+                <li><a href="/fale-conosco/denuncia.html"><img src="/global/img/menu/img-5.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--<div id="tradutor">
+          <a href="">
+            <img src="/global/img/menu/icon-brasil.png">
+            <p>PT</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/ico-usa.png">
+            <p>EN</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/icon-es.png">
+            <p>ES</p>
+          </a>
+        </div>-->
+      <a href="https://portal.claveconsultoria.com.br/" target="_blank" class="bg-purple btn-menu">
+        <p>acesso ao portal</p>
+      </a>
+      <div class="cor-green">
+        <div class="flex justify-center items-center gap-3 text-xl pt-5">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+
+  <header>
+    <div class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <figure class="flex justify-center mt-32">
+          <img class="rounded-3xl" src="/podcast/2020/img/Luci-Bellacosa.png">
+        </figure>
+        <!--/*/-->
+        <div class="flex justify-center gap-2 mt-6">
+          <a class="tag bg-blue-two" href="">#talentacquisition</a>
+          <a class="tag bg-green" href="">#podcast</a>
+        </div>
+        <!--/*/-->
+        <div class="mt-8">
+          <h3 class="text-4xl font-black">
+            Inovação e Sustentabilidade:
+            Como Conectar Pessoas com a
+            Estratégia
+          </h3>
+        </div>
+        <!--/*/-->
+        <div class="mt-4">
+          <p class="text-xs">30 OUT, 2020</p>
+          <p class="text-sm">Publicado por: Débora Honda e Luci Bellacosa</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-12">
+    <section class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <p class="mt-6">
+          Ao se referir sobre as principais peças dentro de um negócio, é praticamente impossível não destacar o capital
+          humano como uma das principais engrenagens no processo produtivo e criativo de uma empresa.
+        </p>
+        <p class="mt-6">
+          Essa semana, trouxemos Luci Bellacosa para conversar sobre como conectar pessoas
+          com a estratégia do negócio.
+        </p>
+        <p class="mt-6 font-bold">
+          Bom Luci, bom dia em primeiro lugar. Super obrigada pela sua disponibilidade em estar com a gente aqui no
+          canal da Clave. Para quem não te conhece ainda, deixa eu te apresentar, Luci Bellacosa, ela é vice-presidente
+          de RH na Ball para a América do Sul.
+          <br><br>
+          Antes de começar a bater papo Luci, eu queria que você contasse um pouco para as pessoas quem você é e falar
+          um pouquinho da sua trajetória.
+        </p>
+        <p class="mt-4">
+          Oi Débora, bom dia é um prazer falar contigo e com a audiência da clave.
+          <br><br>
+          Bom meu nome é Luci Bellacosa, como você me apresentou, eu sou de formação psicóloga, tenho duas
+          pós-graduações, pós-graduação em desenvolvimento organizacional, e uma pós-graduação em Comportamento Humano e
+          tenho também um MBA em Business, que eu achei que em determinado momento era importante eu fazer esse caminho.
+          <br><br>
+          Minha trajetória de Recursos Humanos vem de longa data. Acho que desde a faculdade quando eu comecei a fazer
+          estágio e por um acaso eu fiz um estágio numa grande Companhia, a 3M. Eu me inscrevi no programa de estágio e
+          acabei passando e aí eu entrei nesse mundo organizacional.
+          <br><br>
+          Já se foram aproximadamente 33 anos, é uma vida, eu sei, mas eu sempre falo para todo mundo, todo dia quando
+          eu chego no trabalho eu gosto de me sentir com a experiência dos 33 anos mas com a curiosidade, a excitação e
+          a motivação de quando eu era estagiária há 33 anos atrás. Isso faz uma big diferença no meu olhar. Eu
+          realmente gosto do que eu faço, tenho bastante energia no que eu faço, tenho amor, tenho paixão e curiosidade.
+          Sempre com um olhar de aprendiz, porque sempre vem uma coisa nova.
+          <br><br>
+          Por exemplo, a pandemia mudou o olhar de Recursos Humanos. Nos trouxe novos desafios e foi necessário voltar a
+          ser estagiário nesse processo. Voltar a ser aprendiz, sentar, olhar, aprender, perguntar, conectar com outras
+          pessoas para a gente poder caminhar nesse novo universo. No que todo mundo está chamando de novo normal.
+        </p>
+        <p class="mt-6 font-bold">
+          Que de normal não tem nada não é, Luci? Se a gente olha para isso, não tem nada normal.
+          <br><br>
+          Foi anunciado, e isso é público, a mudança do Rio de Janeiro, de algumas áreas para São José dos Campos, até
+          por uma estratégia do negócio e de proximidade com clientes.
+          <br><br>
+          Como foi conduzir um projeto pensando em gente, no meio dessa pandemia toda? Quais foram os principais
+          impactos pensando em gente?
+        </p>
+        <p class="mt-4">
+          Foi um grande aprendizado, Débora. Nós criamos um grupo de trabalho onde cada um tinha um papel bastante
+          definido, o que a gente chama de workstream. Tínhamos o papel de comunicação, o papel financeiro de condição
+          do projeto, da área de tecnologia da Informação, a parte legal, a parte de people, a parte de mobility das que
+          estão pessoas mudando e eu era a líder, o executive sponsor do projeto.
+          <br><br>
+          Tínhamos um PMO, tínhamos uma agenda de reuniões, tudo muito bem planejado e organizado. E na verdade a gente
+          iria mudar com o escritório corporativo da América do Sul que estava localizado na Barra, no Rio de Janeiro
+          para São José dos Campos. Isso envolvia aproximadamente 140 pessoas e nós tínhamos uma meta que nós
+          gostaríamos, para garantir business continuity, para garantir a segurança do negócio, uma meta de transferir
+          aproximadamente 80 pessoas ou seja, 80 famílias eram o nosso plano para não ter risco de disrupção de
+          negócios. Foi tudo muito bem planejado, em março nós faríamos as visitas das pessoas, inclusive a gente estava
+          convidando gente que ainda não tinha se decidido para conhecer a cidade, fazer um tour, e em março veio a
+          pandemia. 16 de março veio o lockdown e então tudo parou.
+          <br><br>
+          Estávamos com um escritório em construção e aí acho que ter um grupo multidisciplinar foi uma das chaves para
+          gente olhar para isso e dizer: e agora? Como fica o nosso plano? A área de TI passou a ter um papel super
+          importante porque a gente começou a olhar tudo virtualmente.
+          <br><br>
+          A gente tinha um workstream, uma pessoa, uma líder ali de pessoas que tinha o papel de conectar com as
+          pessoas. Ela passou a fazer essa conexão virtual com essas famílias, o pessoal de mobility que cuidava da
+          parte da mudança em si começou a criar a possibilidade dos tours virtuais, inclusive procura de apartamento de
+          casa, tudo isso pelo virtual. A área de comunicação teve um papel super importante porque a gente começou
+          entender que a estratégia de comunicação tinha que ser muito mais intensa e muito mais face to face. Conversar
+          com as pessoas, ainda que utilizando uma ferramenta virtual, é conversar com as pessoas. A gente começou a
+          fazer reuniões mais constantes com o grupo que viria e com o grupo que estava indeciso para engajar essas
+          pessoas nesse processo.
+          <br><br>
+          Acho que o primeiro ponto foi dizer assim: Olha isso não muda os planos. A gente vai fazer essa mudança. Essa
+          mudança, a motivação dela é uma motivação do negócio. Isso é melhor para o negócio então o “vamos viver um
+          futuro juntos” continua em pauta. Isso foi importante comunicar, eu pessoalmente, comunicando a todas as
+          pessoas.
+          <br><br>
+          O segundo ponto, que foi muito importante, foi entender a questão de cada um. A gente conversou com todos os
+          colaboradores que queriam se mudar para entender como que era a sua situação em termos de filhos, de escolas,
+          porque as visitas as escolas passaram a ser virtuais então em termos de filhos, de escola, de cônjuge, como
+          que isso tá para você. Era importante naquele momento ter sensibilidade e empatia, respeitar o timing de cada
+          um.
+          <br><br>
+          Temos ainda um pequeno grupo de funcionários que ainda não fez a sua mudança do Rio de Janeiro, embora para
+          surpresa minha a maioria o fez. A gente tinha essa meta de 70% de transferência, e a gente atingiu uma meta de
+          80%. Pessoas que naquele momento estavam indecisas, foi muito interessante ver que essas pessoas ao verem o
+          cuidado da companhia em fazer essa mudança no meio da pandemia, se engajaram ainda mais. Gente que inclusive
+          já tinha saído da Ball, tinha decidido que não viria, tinha saído da Ball e tinha ido para outra empresa, me
+          ligar e dizer eu quero voltar. Posso? Já foi preenchida minha vaga? E a gente acolheu as pessoas que as vagas
+          ainda não tinham sido preenchidas.
+          <br><br>
+          Isso foi um movimento incrível porque as pessoas acabaram se engajando ainda mais nesse projeto de mudança.
+          Temos muitas pessoas dizendo assim puxa vida, eu já gostava de trabalhar na Ball, a Ball sempre foi uma
+          empresa que respeitou muito as pessoas, que tem essa coisa de ser orientada para as pessoas, mas em meio essa
+          pandemia eu percebi que que isso vai além. Cuida das pessoas, cuida da comunidade, então quero continuar nessa
+          companhia. Em meio a tudo isso, as pessoas fizeram tudo virtual, alugaram casas e apartamentos, fizeram
+          mudança e estão morando em São José.
+          <br><br>
+          Porque com a pandemia eu falei; gente não há necessidade nesse momento, quem quiser pode estender o plano de
+          mudança até janeiro. Mas eu diria que 90% ou mais de 90% das pessoas que iriam se mudar para São José já o
+          fizeram.
+          <br><br>
+          E tinha ainda a construção em si do novo escritório, porque a gente estava em um prédio novo e nós éramos a
+          primeira empresa a entrar nesse prédio comercial para fazer uma mudança. Para conduzir daqui e fazer um
+          escritório a gente se engajou junto com o pessoal do escritório de arquitetura que contratamos. Eu
+          pessoalmente me envolvi, a gente tem um grupo para fazer isso, mas eu falei vamos lá. A gente ia escolher
+          cadeira e escolher móveis e os arquitetos fechavam lojas e diziam pode vir e aí íamos na loja fechada para
+          fazer as escolhas. Escolhas de tinta, fizemos toda a paginação visual com a área de comunicação. Foi uma
+          jornada que em meio a tantas dificuldades que eu nunca me conectei tanto com as pessoas, nunca me senti ão
+          próxima das pessoas e nunca me senti tão motivada a liderar esse processo de mudança em meio a tudo isso.
+          <br><br>
+          Porque ao invés de olhar a pandemia como uma dificuldade ou um obstáculo, porque em meio a tudo isso como
+          recursos humanos nós tivemos que cuidar da pandemia em si. Mudar todos os protocolos de segurança de 14
+          fábricas. Temos 2600 funcionários espalhados de norte a sul no Brasil, ainda Chile, Argentina e Paraguai.
+          <br><br>
+          Tivemos que criar todo um protocolo de segurança para o covid, nos engajar com órgãos governamentais,
+          contratar uma equipe médica para nos auxiliar e auxiliar os nossos colaboradores no sentido de aqueles que
+          eventualmente ficaram doentes e tiveram que ser internados e acompanhar o estado de saúde deles. Graças a Deus
+          não tivemos nenhum colaborador que fosse para um quadro mais grave, mas sim tivemos pessoas que foram
+          internadas e hoje estão todos recuperados e voltando ao trabalho. A gente continua nesse processo de
+          monitorar, de testar, de dar segurança aos protocolos, a todo protocolo de segurança.
+          <br><br>
+          E em meio a tudo isso, acontecendo a mudança, a gente vindo para São José, mudando, construindo escritório e
+          por incrível que pareça nós fizemos a entrega do escritório no tempo previsto antes da pandemia. Foi no tempo
+          previsto e o nosso target de 70% de transferência foi superado. Nós tivemos aproximadamente 80% de
+          transferência das pessoas e as pessoas estão muito felizes aqui em São José.
+        </p>
+        <p class="mt-6 font-bold">
+          Isso que eu ia te perguntar, Luci. Porque quando falamos de cultura, são culturas completamente diferentes. A
+          pandemia foi boa porque rompemos barreiras geográficas que já existiam por meio de nossas crenças e
+          paradigmas. Vocês têm algumas ações para monitorar? Acompanhar essas famílias? Você já me contou que o ponto
+          central da sua estratégia é um olhar humanizado. Como está essa adaptação?
+        </p>
+        <p class="mt-4">
+          A utilização desse escritório também está seguindo um protocolo bastante rígido. Nós criamos alguns critérios
+          de priorização da utilização do escritório, sendo que um dos critérios é sempre somente 25% de ocupação. Além
+          do que, nós tivemos que adaptar todo o escritório, colocar os protetores acrílicos, criar todo um processo de
+          saúde e segurança para as pessoas. E o que a gente percebe que cada pessoa, cada família tem suas
+          particularidades. Existem famílias que estão com crianças em homeschooling e então essas pessoas estão
+          optando, embora já tendo se mudado para São José, por não vir para o escritório para poder acompanhar a
+          criança. As vezes está fazendo essa parceria com o cônjuge, então nós temos essas questões.
+          <br><br>
+          Mas todos os que eu tenho conversado de uma forma geral estão adorando estar aqui. Eles estão bem adaptados,
+          porque eu acho que a grande questão de mudar do Rio de Janeiro para São José, no início era que as pessoas
+          falaram que o Rio de Janeiro tem uma coisa que São José não tem que é praia. Que é a vivência ao ar livre,
+          então a vida livre no final de semana no Rio de Janeiro é uma outra coisa.
+          <br><br>
+          Eu fiquei lá durante quase três anos e pouco e a gente vê que é uma coisa muito importante, muito valorizada.
+          Muitas pessoas moram em apartamento, e é uma cidade quente, então sair e ir à praia caminhar, eu mesma eu
+          sentava às vezes ali na praia para tomar uma água de coco e dizia para o meu marido: olha só a gente senta
+          aqui e vê pelo menos as pessoas praticando 6 esportes diferentes ao ar livre, sem pagar por isso. As pessoas
+          tinham isso, mas a pandemia tirou isso delas. Ela tirou essa vivência ao ar livre. As pessoas pensaram, bom se
+          eu estou em casa aqui eu prefiro estar em casa lá onde eu posso eventualmente ir para um parque com mais
+          segurança.
+          <br><br>
+          E algumas pessoas têm falado muito, relatado muito essa questão de segurança. Nossa eu vou andar todo dia com
+          meu celular sem me preocupar em ser assaltado, eu tenho feito as minhas caminhadas com celular, então as
+          pessoas estão bem adaptadas. Lógico sentem falta da família, mas de qualquer de qualquer forma nesse momento
+          elas não podiam sair e fazer visitas à familiares, estando aqui eu estando no Rio. Eu acho que nesse sentido a
+          pandemia favoreceu essa adaptação. Evidentemente quando tudo isso acabar as pessoas estarão mais adaptadas em
+          São José e poderão voltar ao rio aos fins de semana, visitar familiares, enfim.
+          <br><br>
+          Os critérios da escolha do local para a gente mudar o escritório, a gente iria mudar para São Paulo. Seria
+          cidade de São Paulo ou seria nas imediações. Nós fizemos alguns assessments em algumas cidades e São José foi
+          uma delas já que a gente já tem aqui uma planta em Jacareí e tem um centro de serviços compartilhados já
+          localizado aqui.
+          <br><br>
+          Tinha Campinas e a cidade de São Paulo ali no Itaim, tinha Jundiaí, tinha Indaiatuba e algumas cidades no
+          entorno de São Paulo. Vários critérios como a proximidade do Aeroporto Internacional e esse tipo de coisa a
+          gente trouxe para mesa. Valor de mão de obra, boas universidades, uma série de critérios que nós elencamos
+          junto a uma empresa externa que fez esse assessment, e um dos critérios que a gente colocou foi qual cidade
+          seria mais fácil as pessoas se deslocarem da cidade para o Rio de Janeiro. Porque a maioria deixaria no Rio
+          parentes, pais, às vezes filhos em faculdade, e aí São José esse foi um dos critérios, porque São José fica a
+          uma distância que dá para ir para o Rio dirigindo e voltar no final de semana. Algumas pessoas estão fazendo
+          isso para poder ver família etc. Tem um aeroporto que tem voos regulares para o Rio de Janeiro também e é
+          muito próximo do aeroporto internacional de Guarulhos.
+          <br><br>
+          As pessoas se sentiram bastante seguras em fazer essa mudança, elas se sentiram seguras por todos os suportes
+          que a empresa deu durante a mudança, pelo suporte que a empresa tem oferecido na adaptação das pessoas e dos
+          familiares. Inclusive nós contratamos uma consultoria para ajudar o cônjuge a buscar novas colocações no
+          mercado para aqueles que teriam interesse em fazê-lo e a consultoria para procura de imóveis.
+          <br><br>
+          As pessoas se sentiram muito seguras em fazer essa transição mesmo durante a pandemia e o que eu tenho
+          conversado é que está todo mundo sentindo muito acolhido na cidade. É uma cidade acolhedora de uma forma
+          geral. As pessoas estão se sentindo acolhidas, gostam do clima, é uma cidade muito arborizada, tem muitos
+          parques, e a questão de distâncias todo mundo tem valorizado o bastante. Nossa em 10 minutos eu vou no
+          escritório, em 10 minutos, nada aqui é mais, demora mais de 10 minutos. Então a mobilidade tem sido uma coisa
+          que as pessoas têm valorizado bastante junto com segurança e qualidade de vida.
+          <br><br>
+          Eu percebo que todos que já se mudaram e temos conversado, se sentem bastante adaptados e melhor do que isso,
+          tem sentido que a sua vida familiar ficou melhor depois que se mudou. Isso é uma coisa bacana da gente ouvir,
+          principalmente pela questão da pandemia, então eu fico feliz de ouvir isso das pessoas.
+          <br><br>
+          Nós também. Isso me mostra o quanto é possível, principalmente porque a Ball é uma empresa trabalha muito
+          forte questões de sustentabilidade, inovação, e vocês colocam gente como ponto central dessa estratégia.
+          <br><br>
+          Sem gente, sem olhar para cada um de uma forma individualizada, respeitosa, eu não vou conseguir entregar meus
+          resultados, meu negócio não é sustentável e muito mais que as questões ambientais mas quando você me traz isso
+          me dá essa sensação de realmente eles colocam a gente como ponto central dessa estratégia.
+          <br><br>
+          Agora pensando um pouquinho para frente, pensando nessa visão de futuro existe um direcionador de vocês
+          chamado Drive for 10, pensando nele, quais tem sido as principais ações relacionadas a gente? Aí estou
+          pensando para frente, daqui um tempo sim, a pandemia irá acabar, alguém vai achar uma vacina, a gente vai
+          voltar para uma vida diferente da que a gente tem hoje, mas com muitos aprendizados.
+        </p>
+        <p class="mt-6 font-bold">
+          Mas pensando um pouco na sua estratégia de pessoas, quais tem sido as principais ações, o que você vê pela
+          frente que você vai trazer de aprendizados do que você viveu hoje?
+        </p>
+        <p class="mt-4 ">
+          Em primeiro lugar a liderança da Ball tem conduzido tudo isso de uma forma muito serena, tomando as decisões
+          certas, disponibilizando todos os recursos para que as pessoas circulem com segurança nas nossas fábricas.
+          <br><br>
+          A gente trabalha com um produto que é um produto essencial, porque ele está ligado a cadeia alimentar. Nossas
+          fábricas não param nenhum minuto durante todo esse processo, os nossos trabalhadores continuaram indo a
+          fábrica, supervisores, operadores, mecânicos especialistas, pessoal da engenharia. A gente continuou a fazer
+          tudo o que a gente fazia antes da pandemia, precisou continuar, isso é uma coisa.
+          <br><br>
+          A outra questão é que a pandemia ela trouxe para as pessoas um cuidar-se, um cuidar do meio ambiente, um
+          pensar diferente e acho que isso está espalhado na maioria das pessoas e o nosso produto é um produto que
+          conversa com o momento desse. Porque o nosso produto é a embalagem mais sustentável do planeta, infinitamente
+          reciclável. Porque se a pandemia trouxe algumas questões ligadas também a questão de sustentabilidade do
+          planeta, então o nosso produto nesse momento se tornou uma preferência do consumidor final.
+          <br><br>
+          Por incrível que pareça, as pessoas hoje estão consumindo e elas preferem consumir lata muitas vezes pagando
+          até mais, mas elas dão essa preferência por conta de um propósito de consumir uma embalagem que 60 dias você
+          sabe que você vai poder consumir de novo.
+          <br><br>
+          E isso trouxe, vamos dizer, um desafio para gente de crescimento enorme. Todos os nossos planos relacionados à
+          crescimento na América do Sul e no mundo, eles não só se mantiveram agora na pandemia para um futuro próximo,
+          como eles cresceram em termos de volume.
+          <br><br>
+          A gente tem um plano de crescimento que é bastante robusto e quando a gente olha no plano de crescimento, só
+          existe um jeito de fazer isso, porque a Ball é uma empresa extremamente saudável financeiramente, ela tem
+          recursos para fazer o funding desse crescimento. Nosso desafio é justamente de pessoas. Preparar as pessoas,
+          engajar as pessoas, desenvolvê-las, dar ferramentas e mais do que isso, também abrir oportunidades no mercado.
+          <br><br>
+          E quando a gente olha esse universo de crescimento é impossível falar e não trazer a questão da diversidade e
+          inclusão. Dentro dessa estratégia de crescimento nós entendemos que nós só vamos crescer de forma sustentável
+          se realmente tivermos uma política e uma estratégia de diversidade e inclusão que seja extremamente sólida.
+          <br><br>
+          Nós temos ações bastante sólidas sendo construídas para aumentar o nosso entendimento e o desenvolvimento de
+          pessoas ligadas à diversidade e inclusão, porque diversidade é um dado: tenho tantas mulheres em liderança e
+          afins, inclusão é outra coisa. Inclusão é você dar ferramentas, oportunidades e entender a problemática. É
+          olhar qual é a dinâmica do privilégio para poder incluir quem não teve o privilégio.
+          <br><br>
+          Temos uma estratégia bastante formatada nesse sentido, do desenvolvimento de liderança olhando para jovens
+          talentos, temos uma estrutura que a gente chama de Talent Review, que é um processo anual de olhar para os
+          talentos. Esse talent review vai até gerentes então a gente tá criando um step a mais para entender quem são
+          os supervisores, especialistas, jovens talentos que poderão, como que a gente acelera o desenvolvimento dessas
+          pessoas, como que a gente traz mais mulheres para uma operação que tem pouca diversidade em gênero, como que a
+          gente estimula isso.
+          <br><br>
+          Hoje eu tenho trabalhado muito nessa direção, acho que a questão do covid é uma questão que a gente já com
+          todos os protocolos médicos, equipe médica que contratamos é uma questão que a gente domina mais hoje. Temos
+          mais conhecimento para lidar com isso, então o nosso olhar hoje é um olhar para o futuro. Engajar as pessoas e
+          dizer que existe futuro.
+          <br><br>
+          Esse futuro ele pode ser muito brilhante para você, você pode ter muitas oportunidades, o nosso produto ele é
+          um produto vencedor nesse futuro. Acho que eu não poderia estar mais engajada, feliz e motivada pelo que vem
+          pela frente em termos de pessoas e desenvolvimento de pessoas.
+          <br><br>
+          Muito bacana Luci, se a gente fosse estender a respeito do tema diversidade e inclusão, que é um tema que a
+          gente gosta muito na Clave, ficaríamos muito tempo aqui! Já abrimos até outras pautas falando a respeito
+          disso, porque é um tema que é realmente importante né?
+          <br><br>
+          Diversidade não é mais muito ligado só a questão de raça, de gênero, mas é de que forma eu trabalho a inclusão
+          de quem é diferente, ultimamente até da minha empresa. Como é que eu faço esse match para promover inovação,
+          para promover pesquisa, para promover a empresa, a gente ficaria aqui por muitas e muitas e muitas horas.
+          <br><br>
+          Mas Luci, até para a gente partir pros finalmente eu queria te agradecer muito pela sua disponibilidade. Acho
+          que a Ball tem uma história de muito sucesso, a estratégia de pessoas é uma estratégia hoje colocando gente no
+          ponto central, de uma forma muito respeitosa, de uma forma muito acolhedora, é uma coisa que me faz bem. E a
+          gente mostra para outros RH’s, olha é possível. É possível ser uma empresa super inovadora, super tecnológica,
+          mas eu consigo trazer esse lado que é um lado de olhar para gente, gente é que vai fazer parte da minha
+          estratégia.
+          <br><br>
+          E isso me deixa muito feliz também em dar combustível para outras pessoas, porque tem muita gente que fala,
+          poxa como é que eu começo essa discussão de trazer gente como ponto central da minha estratégia para
+          justificar para o meu board? Qual a dica? Eu começo por onde?
+          <br><br>
+          Isso é tão natural na Ball né, que é até difícil de falar, mas acho que eu já tive outras experiências onde
+          isso não era tão natural, isso era só um discurso. É difícil falar sobre isso porque é tão óbvio né, está tão
+          na cara porque numa empresa você compra máquinas, você compra tecnologia, a gente compra conhecimento também.
+          O dinheiro, o capital, ele compra tudo isso, tecnologia, compra conhecimento, posso trazer aqui os melhores do
+          MIT, compra matéria-prima, compra até inovação, mas não compra o engajamento, não compra as mentes e corações
+          das pessoas.
+          <br><br>
+          E quando eu falo mente e corações, essa é a definição do engajamento. Quando as pessoas estão mentalmente
+          presentes naquilo que elas fazem, conectadas e emocionalmente conectadas com a organização e com as outras
+          pessoas da organização. Eu digo assim, que estratégia bonita boa no PowerPoint, não acontece. Ela só acontece
+          quando eu engajo as pessoas e reconheço que cada uma pode fazer parte dessa estratégia, quando eu compartilho
+          essa visão com as pessoas, e ao compartilhar essa visão com as pessoas eu enriqueço a sua a visão, quando elas
+          trazem a sua a sua criatividade, o seu diverso nessa conversa.
+          <br><br>
+          Porque eu digo quando a gente fala em diversidade, diferentes somos todos nós, Débora. Todo mundo é diferente,
+          todos nós somos todos os diversos. Nós não queremos criar uma empresa que tenha nichos, mulheres, gays,
+          negros, não, diferentes somos todos nós. Somos fortes na medida em que a gente reconhece que todos são
+          diferentes, somos diferentes, porém estamos unidos em torno de propósitos comuns. Vai nem de uma visão comum,
+          mas o propósito tem que ser comum. Porque a visão diferente ela é enriquece o processo.
+        </p>
+        <p class="mt-6 font-bold">
+          Maravilha Luci, porque é exatamente isso. O que me move? Como meu proposito individual se conecta com o
+          propósito da empresa. Começa pelo individual para a gente conseguir olhar para o coletivo.
+          <br><br>
+          Luci mais uma vez, super obrigada pela sua disponibilidade, eu espero te ver muitas e muitas vezes aqui no
+          canal da Clave. Para a gente voltar com outros temas.
+        </p>
+        <p class="mt-6 font-bold">
+          Será um prazer Débora, super gostoso. Quando tudo isso terminar você já tem um convite para vir aqui e tomar
+          um café comigo, com Adriana e com a Taís. Um café não, um refrigerante, um chá, uma água, na lata!
+          <br><br>
+          Um grande abraço Débora sucesso para vocês.
+        </p>
+
+
+        <p class="mt-6">
+          Assista ao conteúdo clicando
+          <a class="cor-blue-one font-black uppercase" href="https://www.youtube.com/watch?v=EGwMoxgJjDY&t=383s"
+            target="_blank">aqui</a>.
+        </p>
+
+        <div class="box-spotify">
+          <a class="flex gap-4 items-center"
+            href="https://open.spotify.com/episode/5xTeDyVA2QCM5PNZ1c70Lm?si=7223bc9705af464e"
+            target="_blank">
+            <i class="fa-brands fa-spotify text-7xl"></i>
+            <p>Encontre esse bate-papo do<br>
+              Clave Talks, entre outros no Spotify</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Compartilhe nas Redes Sociais ///////////////-->
+    <!--<section class="mt-12">
+      <p class="text-center">Compartilhe este conteúdo!</p>
+      <div class="md:flex justify-center gap-4 mt-4">
+        <a class="artigo-social facebook" href="" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+          <p class="w-28">Facebook</p>
+        </a>
+        <a class="artigo-social twitter" href="" target="_blank">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <p class="w-28">X</p>
+        </a>
+        <a class="artigo-social linkedin" href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p class="w-28">LinkedIn</p>
+        </a>
+      </div>
+    </section>-->
+
+    <section class=" mt-24">
+      <div class="flex justify-center md:flex-row flex-col items-center gap-4 mt-8">
+        <div class="photo-container w-40 h-40">
+          <img class="photo" src="/blog/img/assinaturas/debora-honda.png">
+        </div>
+        <div class="bg-gray-1 p-6 md:m-0 m-4 rounded-2xl md:w-1/2">
+          <h2 class="font-extrabold text-3xl mb-4">Débora Honda</h2>
+          <p>
+            Atua há mais de 15 anos em projetos de ganho de performance e
+            aprendizagem nos principais setores da economia. Especialista em Mapeamento de Perfil
+            com projetos nacionais e internacionais de transformação do ambiente organizacional.
+            Pesquisadora sobre os impactos da transformação digital no futuro do mercado de
+            trabalho, já auxiliou grandes companhias na construção de suas estratégias
+            de Talent Management.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Paginação //////////////-->
+    <section class="flex justify-center gap-4 mt-16 paginacao">
+      <a class="bg-yellow" href="">1</a>
+      <a class="bg-yellow" href="/podcast/2020/post-02.10.20.html">2</a>
+      <a class="bg-yellow" href="/podcast/2020/post-23.09.20.html">3</a>
+      <a class="bg-yellow" href="/podcast/2020/post-27.08.20.html">4</a>
+      <a class="bg-pink" href="/podcast/pag-3.html">voltar</a>
+    </section>
+
+  </main>
+
+
+  <!--///////////// FOOTER //////////////-->
+  <footer class="md:w-full mt-16">
+    <section class="footer-one">
+      <div class="grid md:grid-cols-4 gap-4">
+        <div>
+          <figure>
+            <img src="/global/img/logos/logo-v.png" class="w-28 pb-7" alt="Logo Clave">
+          </figure>
+          <div>
+            <p class="font-extrabold pb-2">Localização</p>
+            <p class="text-sm">
+              <i class="fa-solid fa-location-dot"></i>
+              Rua Primeiro de Março, 07 - salas 801 a 804
+            </p>
+            <p class="text-sm">Centro - Rio de Janeiro-RJ</p>
+            <p class="text-sm">CEP: 20010-000</p>
+          </div>
+          <div class="flex flex-col text-sm pt-5">
+            <p class="font-extrabold pb-2">Contatos</p>
+            <a href="tel:552122171500"><i class="fa-solid fa-phone"></i> (21) 2217-1500</a>
+            <a href="https://api.whatsapp.com/send?phone=5521999524559" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i> (21) 99952-4559</a>
+            <a href="mailto:contato@clavegroup.com.br"><i class="fa-solid fa-at"></i>
+              contato@clavegroup.com.br</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Sobre a Clave</p>
+          <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+          <!--<a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>-->
+          <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+          <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Produtos</p>
+          <p class="font-bold pb-2">Para você que busca Consultoria</p>
+          <div class="flex flex-col">
+            <a href="/produtos/consultoria/assessment.html">&nbsp;&nbsp; Assessment</a>
+            <a href="/produtos/consultoria/capacitacao.html">&nbsp;&nbsp; Capacitação</a>
+            <a href="/produtos/consultoria/mentoria.html">&nbsp;&nbsp; Mentoria</a>
+            <a href="/produtos/consultoria/selecao.html">&nbsp;&nbsp; Projetos de Seleção</a>
+            <a href="/produtos/consultoria/talent-acquisiton.html">&nbsp;&nbsp; Terceirização do Processo de Talent
+              Acquisition - RPO</a>
+          </div>
+          <p class="font-bold pt-4 pb-2">Para você que busca plataforma<br> personalizada HR Tech</p>
+          <div class="flex flex-col">
+            <a href="/produtos/hr-tech/assessment360.html">&nbsp;&nbsp; Assessment 360</a>
+            <a href="/produtos/hr-tech/assessment-customizado.html">&nbsp;&nbsp; Assessment Customizado</a>
+            <a href="/produtos/hr-tech/data-science.html">&nbsp;&nbsp; Assessment Data Science</a>
+            <a href="/produtos/hr-tech/fit-de-comportamentos.html">&nbsp;&nbsp; Assessment Fit de Comportamentos</a>
+            <a href="/produtos/hr-tech/mindset-digital.html">&nbsp;&nbsp; Assessment Mindset Digital</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <a class="font-extrabold pb-2" href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+          <a class="font-extrabold pb-2" href="/blog/blog-1.html">Blog</a>
+          <a class="font-extrabold pb-2">Fale Conosco</a>
+          <a href="/fale-conosco/contato.html">&nbsp;&nbsp; Contato</a>
+          <a href="/fale-conosco/denuncia.html">&nbsp;&nbsp; Denúncia</a>
+        </div>
+      </div>
+      <!--/redes sociais/-->
+      <div class="cor-blue-one">
+        <h5 class="text-center font-bold">Acompanhe as nossas redes sociais</h5>
+        <div class="flex justify-center items-center gap-6 text-2xl pt-3">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </section>
+    <!--/ Footer 2/-->
+    <section class="text-center p-4">
+      <p class="text-sm">Copyright © 2024 · Clave © Todos os direitos reservados</p>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".missao", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+
+</html>

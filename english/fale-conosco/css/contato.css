@@ -1,0 +1,151 @@
+@import url(/global/css/global.css);
+
+.capa-contato {
+  background: url(/fale-conosco/img/banner-contato.png) center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.capa-denuncia {
+  background: url(/fale-conosco/img/banner-denuncia.png) center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-agradecimento {
+  background: url(/fale-conosco/img/bg-blue.svg) center center no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.form-contact {
+  background: white;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 15px 20px -3px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.content-contact {
+  background: linear-gradient(rgba(111, 59, 239, 9.0), rgba(111, 59, 239, .1)), 
+  url(/global/img/home/contact.png) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.input-container label {
+  font-size: 16px;
+  position: relative;
+  bottom: 5px;
+}
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input,
+    textarea,
+    select {
+      border: 2px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 15px;
+      transition: all 0.2s ease;
+      resize: none;
+      width: 100%;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #6f3bef;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(111, 59, 239, 0.15);
+    }
+
+    button {
+      background: linear-gradient(135deg, #6f3bef, #45d2c3);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .status {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+
+
+
+
+.option-input {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 3px;
+}
+
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: var(--purple-one) !important;
+
+}
+.option-input:checked::before {
+  width: 18px;
+  height: 18px;
+  display:flex;
+  content: '\f00c';
+  font-size: 20px;
+  font-weight:bold;
+  position: absolute;
+  align-items:center;
+  justify-content:center;
+  font-family:'Font Awesome 5 Free';
+  color: white;
+}
+
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+#empresa{
+  position: absolute;
+  top: -9999px;
+}
+
+#honeypot {
+  display: none;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 960px) {
+  .form-contact {
+    padding: 5px 20px;
+  }
+}

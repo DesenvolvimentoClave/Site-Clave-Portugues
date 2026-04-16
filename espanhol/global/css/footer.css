@@ -1,0 +1,18 @@
+.footer-one {
+    background: linear-gradient(rgba(230, 232, 247, 9.0), 
+    rgba(111, 59, 239, .1)), 
+    url(/global/img/home/bg-mesclado.jpeg) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.footer-one a:hover {
+    color: var(--blue-one);
+}
+
+.footer-one i {
+    color: var(--blue-one);
+}

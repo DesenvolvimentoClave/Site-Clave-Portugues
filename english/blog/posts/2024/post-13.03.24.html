@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clave Group</title>
+
+  <!-- Favicon -->
+  <link href="/global/img/logos/favicon.ico" rel="icon">
+
+  <!-- Empresa -->
+  <link rel="stylesheet" href="/blog/css/blog.css" />
+
+  <!--/ Tailwind /-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+  <!--/ Fonts Icons Google /-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
+  <script src="https://kit.fontawesome.com/260c512de2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--/ Menu Responsive/-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="menu" class="menu-responsive">
+    <div class="md:inline flex justify-between">
+      <a href="/index.html"><img class="logo" src="/global/img/logos/logo-h.png"></a>
+      <div class="menu-toggle"></div>
+    </div>
+    <nav>
+      <ul class=" ul-reset">
+        <li class="droppable">
+          <a href="#">Sobre a Clave</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">apartment</i>
+                  <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+                </li>
+                <li><a href="/sobre-a-clave/empresa.html"><img src="/global/img/menu/img-1.jpeg"></a> </li>
+              </ul>
+              <!--<ul class="ul-reset">
+                    <li class="flex items-center gap-2">
+                      <i class="material-symbols-rounded bg-blue-one">handshake</i>
+                      <a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>
+                    </li>
+                    <li><a href="/sobre-a-clave/seja-parceiro.html"><img src="/global/img/menu/img-6.png"></a></li>
+                  </ul>-->
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract</i>
+                  <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+                </li>
+                <li><a href="/sobre-a-clave/politica-de-privacidade.html"><img src="/global/img/menu/img-2.jpeg"></a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-one">contract_edit</i>
+                  <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+                </li>
+                <li><a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf"><img src="/global/img/menu/img-3.jpeg"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Produtos</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca Consultoria</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">hub</i>
+                  <a href="/produtos/consultoria/assessment.html">Assessment</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/capacitacao.html">Capacitação</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/mentoria.html">Mentoria</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">person_search</i>
+                  <a href="/produtos/consultoria/selecao.html">Projetos de Seleção</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-blue-two">data_loss_prevention</i>
+                  <a href="/produtos/consultoria/talent-acquisiton.html">Terceirização do Processo de Talent
+                    Acquisition - RPO</a>
+                </li>
+              </ul>
+              <ul class="ul-reset">
+                <h3 class="mb-4">Para você que busca plataforma personalizada HR Tech</h3>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">sync_saved_locally</i>
+                  <a href="/produtos/hr-tech/assessment360.html">Assessment 360</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/assessment-customizado.html">Assessment Customizado</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/data-science.html">Assessment Data Science</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">quick_reference_all</i>
+                  <a href="/produtos/hr-tech/fit-de-comportamentos.html">Assessment Fit de Comportamentos</a>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-purple">wysiwyg</i>
+                  <a href="/produtos/hr-tech/mindset-digital.html">Assessment Mindset Digital</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li>
+          <a href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Blog</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/blog/pag-1.html">Posts</a>
+                </li>
+                <li><a href="/blog/pag-1.html"><img src="/global/img/menu/img-7.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/podcast/pag-1.html">PodCast</a>
+                </li>
+                <li><a href="/podcast/pag-1.html"><img src="/global/img/menu/img-8.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--//-->
+        <li class="droppable">
+          <a href="#">Fale Conosco</a>
+          <div class="mega-menu">
+            <div class="cf">
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">call</i>
+                  <a href="/fale-conosco/contato.html">Contato</a>
+                </li>
+                <li><a href="/fale-conosco/contato.html"><img src="/global/img/menu/img-4.jpeg"></a></li>
+              </ul>
+              <ul class="ul-reset">
+                <li class="flex items-center gap-2">
+                  <i class="material-symbols-rounded bg-green">perm_phone_msg</i>
+                  <a href="/fale-conosco/denuncia.html">Denúncia</a>
+                </li>
+                <li><a href="/fale-conosco/denuncia.html"><img src="/global/img/menu/img-5.jpeg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!--<div id="tradutor">
+          <a href="">
+            <img src="/global/img/menu/icon-brasil.png">
+            <p>PT</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/ico-usa.png">
+            <p>EN</p>
+          </a>
+          <a href="">
+            <img src="/global/img/menu/icon-es.png">
+            <p>ES</p>
+          </a>
+        </div>-->
+      <a href="https://portal.claveconsultoria.com.br/" target="_blank" class="bg-purple btn-menu">
+        <p>acesso ao portal</p>
+      </a>
+      <div class="cor-green">
+        <div class="flex justify-center items-center gap-3 text-xl pt-5">
+          <a href="https://www.instagram.com/clave_group/" target="_blank" class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </nav>
+    <div class="clearfix"></div>
+  </div>
+
+  <script>
+      $(document).ready(function(){
+          $('.menu-toggle').click(function(){
+              $('.menu-toggle').toggleClass('active')
+              $('nav').toggleClass('active')
+          })
+      })
+  </script>
+
+  <header>
+    <div class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <figure class="flex justify-center mt-32 p-2">
+          <img class="rounded-3xl" src="/blog/posts/2024/img/img-1.jpeg">
+        </figure>
+        <!--/*/-->
+        <div class="flex justify-center flex-wrap gap-2 mt-6">
+          <a class="tag bg-purple" href="">#carreira</a>
+          <a class="tag bg-blue-one" href="">#autoconhecimento</a>
+          <a class="tag bg-blue-two" href="">#processoseletivo</a>
+          <a class="tag bg-green" href="">#mindsetdigital</a>
+        </div>
+        <!--/*/-->
+        <div class="mt-8">
+          <h3 class="text-4xl font-black" >
+            Transformação Digital:<br />
+            O que é fato e o que é hype?
+          </h3>
+        </div>
+        <!--/*/-->
+        <div class="mt-4">
+          <p class="text-xs">29 JAN, 2024</p>
+          <p class="text-sm">Publicado por: Marketing Clave</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="mt-12">
+    <section class="flex justify-center">
+      <div class="md:w-3/4 md:p-0 p-4">
+        <p>
+          O mercado tem uma verdadeira paixão pelas chamadas buzzwords,
+          aquelas palavrinhas da moda, aparentemente revolucionárias,
+          que todo mundo repete e ajudam a demarcar se você está “por dentro,
+          atualizado” ou “por fora, ultrapassado”. Transformação Digital parece
+          ser uma delas, mas nesse caso o buraco é um pouco mais embaixo.
+        </p>
+        <p class="mt-6">
+          Primeiramente porque, nesse caso, de fato é algo revolucionário,
+          inescapável e inegável - e não apenas a última tendência do momento.
+          Mas para além disso, existe uma verdadeira guerra de caça-cliques,
+          onde cada um tenta fazer uma afirmação mais alarmista do que o outro,
+          com o objetivo de se posicionar como referência no assunto.
+          E no meio desse tiroteio, ficamos nós, tentando entender o que é
+          fato e o que é apenas hype.
+        </p>
+        <p class="mt-6">
+          Obviamente a Transformação Digital é um fenômeno de altíssimo impacto.
+          Vamos observar algumas estatísticas recentes:
+        </p>
+        <ul class="mt-6">
+          <li>Quase 90% dos executivos seniores entrevistados pelo Gartner acreditam
+            que a transformação digital deve ser uma prioridade fundamental
+            para as empresas.¹</li>
+          <li>De acordo com uma análise da Forbes em 2016, 84% dos projetos
+            de transformação digital falhariam. Em 2022 repetiram a análise e
+            ainda não veem melhora significativa. ²</li>
+          <li>As empresas estão alocando recursos substanciais para projetos
+            de transformação digital, com gastos médios de US$ 15,7
+            milhões em 2023.³</li>
+          <li>89% das grandes empresas em todo o mundo embarcaram em sua jornada
+            de transformação digital e IA. No entanto, obtiveram apenas 31% do
+            aumento de receita previsto e 25% de economia de custos. 4</li>
+        </ul>
+        <p class="mt-6">
+          Por um lado, sim, as empresas precisam iniciar suas jornadas de Transformação
+          Digital urgentemente, como um elemento de alta prioridade, ligado diretamente
+          a sobrevivência do negócio. Mas ao mesmo tempo elas precisam ser extremamente
+          cuidadosas ao navegar nessa enxurrada de informações, falsas promessas
+          e muita, muita hype.
+        </p>
+        <p class="mt-6">
+          É importante lembrarmos que muitas previsões dadas como certas, na verdade
+          se mostraram grandes furadas. Você se lembra do quanto se falava dos impactos
+          de Google Glass, Realidade Aumentada e Second Life? Mesmo o Metaverso
+          (um Second Life repaginado), cuja hype foi incrivelmente acelerada, hoje já dá
+          indícios de que não é tudo isso.
+        </p>
+        <p class="mt-6">
+          <strong>Mas então, o que podemos fazer?</strong>
+        </p>
+        <p class="mt-4">
+          Uma das principais técnicas de sobrevivência que militares mundo afora aprendem,
+          para casos em que você está perdido em uma mata, por exemplo, se baseia em um
+          acrônimo: ESAON – Estacionar, Sentar, Alimentar, Orientar e Navegar.
+          Essa técnica se aplica perfeitamente ao cenário da Transformação Digital.
+          Os primeiros passos, Estacionar e Sentar, são talvez um pouco contraintuitivos.
+          Mas na verdade, estacionar e sentar são as primeiras coisas que você deve fazer,
+          porque, como dizia o Gato de Cheshire no clássico livro Alice no País das Maravilhas,
+          “se você não sabe para onde está indo, qualquer caminho serve”.
+          E se você apenas anda, pela mera sensação de que ao andar está evoluindo,
+          na verdade você pode estar simplesmente gastando energia para nada.
+        </p>
+        <p class="mt-6">
+          O próximo passo é Alimentar. No caso da Transformação Digital, é se alimentar de dados,
+          informações, reflexões e insights. Não acredite em uma única fonte e, sinceramente,
+          desconfie de qualquer um que venha muito cheio de certezas.
+          O cenário é muito incerto e nesse sentido, a principal característica de uma fonte
+          confiável é a parcimônia. Se informe, troque ideia com diferentes fontes, mas ao primeiro
+          sinal de alarmismo e certezas absolutas, ligue seu alerta: Você pode estar diante de
+          mais um caça-cliques alarmista.
+        </p>
+        <p class="mt-6">
+          O próximo passo é Orientar-se. Ler o ambiente no qual você está inserido, entender
+          o cenário e buscar fatos e evidências concretas que você pode usar para se situar.
+        </p>
+        <p class="mt-6">
+          Por fim, a última etapa é Navegar. Estando devidamente alimentado e orientado,
+          é possível traçar uma estratégia de qual caminho percorrer e como fazer isso.
+          E esse processo todo passa definitivamente pelas pessoas. Preparar seu time,
+          em todos os níveis, do operacional ao estratégico, é talvez a única característica
+          da Transformação Digital que se aplique a toda e qualquer empresa.
+        </p>
+        <p class="mt-6">
+          Um dos meus autores preferidos nessa área (e definitivamente uma fonte confiável),
+          Cezar Taurion, afirmava já em 2016 que não se faz uma cultura digital com um slogan.
+          Segundo o autor, as empresas precisam sair desse modelo antiquado de implementações
+          de mudanças burocráticas e lentas (como os antigos ERPs) e adotar um modelo mais
+          flexível e ágil. Baseado em um estudo do MIT Sloan Management School, ele sugere
+          strês áreas de foco para criar uma cultura digital:
+        </p>
+
+        <p class="mt-6">
+          <strong>1.</strong> Criar uma cultura digital é um esforço intencional e não obra do acaso -
+          não se cria apenas com slogans de “somos digitais”, e ao mesmo tempo continuar
+          a manter os processos e as estruturas organizacionais da sociedade analógica.
+          É um esforço de mudança de conceitos que precisa do comprometimento do CEO
+          e dos demais executivos.
+        </p>
+        <p class="mt-6">
+          <strong>2.</strong> Todos os executivos precisam navegar bem no mundo digital.
+          Os executivos e as lideranças no mundo digital devem ter skills de tecnologia,
+          fundamentalmente ter visão transformadora, ser visionário (forward thinker)
+          e espírito de colaboração e liderança. Ter excedido suas metas de vendas nos
+          últimos quartis não é qualificação prioritária para assumir uma liderança
+          no mundo digital.
+        </p>
+        <p class="mt-6">
+          <strong>3.</strong> É absolutamente essencial investir em talentos digitais.
+          O ambiente de trabalho hoje é totalmente diferente daquele do século 20.
+          Os custos de experimentação e eventuais fracassos são bem mais baixos do que
+          antigamente. Como exemplo, uma mudança fundamental no algoritmo do AdWords
+          do Google foi feita por cinco engenheiros de software em um fim de semana.
+        </p>
+        <p class="mt-6">
+          Perceba que desde 2016 a necessidade de desenvolver os talentos digitais
+          já estava sendo discutida e hoje se mostra um dos aspectos centrais em qualquer
+          processo de Transformação Digital. No final do dia, quem vai tornar sua empresa
+          mais ou menos adaptada ao cenário não é nenhum software, IA ou sistema –
+          são as pessoas e o uso que elas vão fazer dessas tecnologias.
+        </p>
+        <p class="mt-6">
+          Em resumo, precisamos analisar friamente o quanto nosso negócio e nosso mercado
+          são efetivamente impactados pela transformação digital, agindo de forma estratégica
+          para determinar de que forma vamos nos situar e nos adaptar a esse cenário.
+          Sem cair em hype, sem achar que o mundo está acabando e sem alarmismo.
+          Apenas para citar uma última estatística, um estudo de pesquisadores do
+          MIT indicou que somente 23% dos trabalhadores, medidos em termos de salários
+          em dólares, poderiam ser efetivamente substituídos pela IA.
+          Nos outros casos, os humanos fizeram o trabalho de forma mais econômica,
+          pois a IA ainda tem altos custos tanto de instalação quanto de operação.
+        </p>
+        <p class="mt-6">
+          Por essas e outras que o apoio de especialistas é fundamental nesse processo.
+          Aqui na Clave Consultoria, estamos investigando esse tema desde 2018 e temos
+          ajudado diversas empresas a navegar nesse cenário e tomar decisões de forma
+          embasada e robusta. Para citar um dos projetos em que estamos trabalhando atualmente,
+          em uma multinacional do setor de telecom, já avaliamos as competências digitais
+          e o nível de maturidade digital de mais de 6 mil funcionários e devemos chegar a
+          12 mil ainda esse ano. E adivinhe só? O tempo todo estamos monitorando o cenário
+          e fazendo adaptações no processo porque a Transformação Digital é assim:
+          dinâmica, acelerada, mas muito instigante.
+        </p>
+        <p class="mt-6">
+          Para finalizar, gostaria de deixar duas sugestões de livros:
+          Tecnologia e Humanidade6 do futurista Gerd Leonhard e I, Human7,
+          do Dr Tomas Chamorro Premuzic, especialista em potencial humano e tecnologia.
+          Ambos vão direto ao ponto do título desse artigo, separando de forma muito
+          inteligente o que é fato e o que hype na Transformação Digital.
+        </p>
+        <p class="mt-5 break-all">
+          1. <a href="https://www.gartner.com/en/information-technology/topics/digital-transformation" target="_blank">
+            https://www.gartner.com/en/information-technology/topics/digital-transformation</a>
+        </p>
+        <p class="break-all">
+          2. <a
+            href="https://www.forbes.com/sites/forbescoachescouncil/2022/03/16/12-reasons-your-digital-transformation-will-fail/?sh=48e976e01f1e"
+            target="_blank">
+            https://www.forbes.com/sites/forbescoachescouncil/2022/03/16/12-reasons-your-digital-transformation-will-fail/?sh=48e976e01f1e</a>
+        </p>
+        <p class="break-all">
+          3. <a href="https://www.statista.com/topics/6778/digital-transformation/" target="_blank">
+            https://www.statista.com/topics/6778/digital-transformation/</a>
+        </p>
+        <p class="break-all">
+          4. <a href="https://hbr.org/2023/07/the-value-of-digital-transformation" target="_blank">
+            https://hbr.org/2023/07/the-value-of-digital-transformation</a>
+        </p>
+        <p class="break-all">
+          5. <a
+            href="https://www.linkedin.com/pulse/n%25C3%25A3o-se-cria-uma-cultura-digital-apenas-com-slogans-cezar-taurion/?trackingId=3s5KD4d1TPSjsSEPJ4tzVQ%3D%3D"
+            target="_blank">
+            https://www.linkedin.com/pulse/n%25C3%25A3o-se-cria-uma-cultura-digital-apenas-com-slogans-cezar-taurion/?trackingId=3s5KD4d1TPSjsSEPJ4tzVQ%3D%3D</a>
+        </p>
+        <p class="break-all">
+          6. Livro Tecnologia e Humanidade, de Gerd Leonhard -<br>
+          <a href="https://futuristgerd.com/expertise/author/" target="_blank">
+            https://futuristgerd.com/expertise/author/</a>
+        </p>
+        <p class="break-all">
+          7. Livro I, Human, de Tomas Chamorro-Premuzic - <br>
+          <a href="https://www.drtomas.com/writing/" target="_blank">
+            https://www.drtomas.com/writing/</a>
+        </p>
+
+      </div>
+    </section>
+
+    <!--///////////// Compartilhe nas Redes Sociais ///////////////-->
+   <!--<section class="mt-12">
+      <p class="text-center">Compartilhe este conteúdo!</p>
+      <div class="md:flex justify-center gap-4 mt-4">
+        <a class="artigo-social facebook" href="" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+          <p class="w-28">Facebook</p>
+        </a>
+        <a class="artigo-social twitter" href="" target="_blank">
+          <i class="fa-brands fa-square-x-twitter"></i>
+          <p class="w-28">X</p>
+        </a>
+        <a class="artigo-social linkedin" href="https://www.linkedin.com/feed/" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p class="w-28">LinkedIn</p>
+        </a>
+      </div>
+    </section>-->
+
+    <section class=" mt-24">
+      <div class="flex justify-center md:flex-row flex-col items-center gap-4">
+        <div class="photo-container w-48 h-48">
+          <img class="photo" src="/blog/img/assinaturas/luiz.jpeg">
+        </div>
+        <div class="bg-gray-1 p-6 md:m-0 m-4 rounded-2xl md:w-1/2">
+          <h2 class="font-extrabold text-3xl mb-4">Luiz Victorino - Head de Pesquisa e Metodologia</h2>
+          <p>
+            Partner & Head de Research and Methodology na Clave. 
+            É Ph.D e Consultor de Estratégia na Clave. Atua há mais 
+            de 15 anos em projetos nacionais e internacionais em gestão 
+            de pessoas e estratégia organizacional, além de pesquisas na 
+            área de Psicologia do Trabalho e das Organizações.​
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--///////////// Paginação //////////////-->
+    <section class="flex justify-center gap-4 mt-16 paginacao">
+      <a class="bg-yellow" href="">1</a>
+      <a class="bg-yellow" href="/blog/posts/2024/post-13.03.24.html">2</a>
+      <a class="bg-yellow" href="/blog/posts/2024/post-29.01.24.html">3</a>
+      <a class="bg-yellow" href="/blog/posts/2024/post-04.01.24.html">4</a>
+      <a class="bg-pink" href="/blog/blog-1.html">voltar</a>
+    </section>
+
+
+  </main>
+
+
+  <!--///////////// FOOTER //////////////-->
+  <footer class="md:w-full mt-16">
+    <section class="footer-one">
+      <div class="grid md:grid-cols-4 gap-4">
+        <div>
+          <figure>
+            <img src="/global/img/logos/logo-v.png" class="w-28 pb-7" alt="Logo Clave">
+          </figure>
+          <div>
+            <p class="font-extrabold pb-2">Localização</p>
+            <p class="text-sm">
+              <i class="fa-solid fa-location-dot"></i>
+              Rua Primeiro de Março, 07 - salas 801 a 804
+            </p>
+            <p class="text-sm">Centro - Rio de Janeiro-RJ</p>
+            <p class="text-sm">CEP: 20010-000</p>
+          </div>
+          <div class="flex flex-col text-sm pt-5">
+            <p class="font-extrabold pb-2">Contatos</p>
+            <a href="tel:552122171500"><i class="fa-solid fa-phone"></i> (21) 2217-1500</a>
+            <a href="https://api.whatsapp.com/send?phone=5521999524559" target="_blank"><i
+                class="fa-brands fa-whatsapp"></i> (21) 99952-4559</a>
+            <a href="mailto:contato@clavegroup.com.br"><i class="fa-solid fa-at"></i>
+              contato@clavegroup.com.br</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Sobre a Clave</p>
+          <a href="/sobre-a-clave/empresa.html">A Empresa</a>
+          <!--<a href="/sobre-a-clave/seja-parceiro.html">Seja um parceiro</a>-->
+          <a href="/sobre-a-clave/politica-de-privacidade.html">Política de Privacidade de Dados</a>
+          <a href="/sobre-a-clave/doc/termo-de-uso-site-clave.pdf">Termo de Uso</a>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <p class="font-extrabold pb-2">Produtos</p>
+          <p class="font-bold pb-2">Para você que busca Consultoria</p>
+          <div class="flex flex-col">
+            <a href="/produtos/consultoria/assessment.html">&nbsp;&nbsp; Assessment</a>
+            <a href="/produtos/consultoria/capacitacao.html">&nbsp;&nbsp; Capacitação</a>
+            <a href="/produtos/consultoria/mentoria.html">&nbsp;&nbsp; Mentoria</a>
+            <a href="/produtos/consultoria/selecao.html">&nbsp;&nbsp; Projetos de Seleção</a>
+            <a href="/produtos/consultoria/talent-acquisiton.html">&nbsp;&nbsp; Terceirização do Processo de Talent
+              Acquisition - RPO</a>
+          </div>
+          <p class="font-bold pt-4 pb-2">Para você que busca plataforma<br> personalizada HR Tech</p>
+          <div class="flex flex-col">
+            <a href="/produtos/hr-tech/assessment360.html">&nbsp;&nbsp; Assessment 360</a>
+            <a href="/produtos/hr-tech/assessment-customizado.html">&nbsp;&nbsp; Assessment Customizado</a>
+            <a href="/produtos/hr-tech/data-science.html">&nbsp;&nbsp; Assessment Data Science</a>
+            <a href="/produtos/hr-tech/fit-de-comportamentos.html">&nbsp;&nbsp; Assessment Fit de Comportamentos</a>
+            <a href="/produtos/hr-tech/mindset-digital.html">&nbsp;&nbsp; Assessment Mindset Digital</a>
+          </div>
+        </div>
+        <!--*-->
+        <div class="flex flex-col text-sm">
+          <a class="font-extrabold pb-2" href="/nossas-vagas/nossas-vagas.html">Nossas Vagas</a>
+          <a class="font-extrabold pb-2" href="/blog/blog-1.html">Blog</a>
+          <a class="font-extrabold pb-2">Fale Conosco</a>
+          <a href="/fale-conosco/contato.html">&nbsp;&nbsp; Contato</a>
+          <a href="/fale-conosco/denuncia.html">&nbsp;&nbsp; Denúncia</a>
+        </div>
+      </div>
+      <!--/redes sociais/-->
+      <div class="cor-blue-one">
+        <h5 class="text-center font-bold">Acompanhe as nossas redes sociais</h5>
+        <div class="flex justify-center items-center gap-6 text-2xl pt-3">
+          <a href="https://www.instagram.com/clave_group/" target="_blank"
+            class="fa-brands fa-instagram"></a>
+          <a href="https://www.linkedin.com/company/80853/admin/feed/posts/" target="_blank"
+            class="fa-brands fa-linkedin"></a>
+          <a href="https://www.facebook.com/ClaveGroup" target="_blank" class="fa-brands fa-facebook"></a>
+          <a href="https://www.youtube.com/channel/UCeWr5qnD-luRTlr1bPbrRaQ" target="_blank"
+            class="fa-brands fa-youtube"></a>
+          <a href="https://open.spotify.com/show/6Yg3Dyj7qACoJLUTPgXP6U" target="_blank"
+            class="fa-brands fa-spotify"></a>
+        </div>
+      </div>
+    </section>
+    <!--/ Footer 2/-->
+    <section class="text-center p-4">
+      <p class="text-sm">Copyright © 2024 · Clave © Todos os direitos reservados</p>
+    </section>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".missao", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
+
+</body>
+
+</html>

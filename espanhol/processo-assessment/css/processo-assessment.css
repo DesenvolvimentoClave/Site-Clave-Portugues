@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(/global/css/colors.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    min-height: 100vh;
+    margin: auto 0;
+    color: #727999;
+    overflow-x: hidden;
+    background: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Albert Sans', sans-serif;
+}
+  
+
+.titles {
+    color: #bcc0d6;
+}
+
+.bg-video {
+    background: 
+      url(/global/img/home/bg-purple.svg) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+    margin: 8px;
+}
+
+.button {
+	font-family: 'Mulish', sans-serif;
+	font-size: 22px;
+	color: #ffffff;
+	cursor: pointer;
+    border-radius: 14px;
+    padding: 10px 20px;
+	border: 0px solid #000;		
+}
+
+/* Initiate Auto-Pulse animations */
+.button.pulse-button {
+	animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
+}
+
+/* Initiate color change for pulse-on-hover */
+
+
+/* Continue animation and add shine on hover */
+.button:hover,
+.button:focus {
+	animation: borderPulse 1000ms infinite ease-out, 
+    colorShift 10000ms infinite ease-in, hoverShine 200ms;
+}
+
+/* Declate color shifting animation */
+@keyframes colorShift {
+	0%, 100% {
+			background: var(--blue-one);
+	}
+	33% {
+		background: var(--green-one);
+	}
+	66%{
+		background: var(--purple-one);
+	}
+}
+
+/* Declare border pulse animation */
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 5px rgba(255, 255, 255,.4), 
+    0px 0px 0px 0px rgba(255,255,255,1);
+  }
+  100% {
+    box-shadow: inset 0px 0px 0px 3px rgba(117, 117, 255,.2),
+     0px 0px 0px 10px rgba(255,255,255,0);
+  }
+}
+
+/* Declare shine on hover animation */
+@keyframes hoverShine {
+	0%{
+		background-image: linear-gradient(135deg, rgba(255,255,255,.4) 0%, 
+        rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+	}
+	50%{
+		background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,.4) 50%, rgba(255,255,255,0) 100%);
+	}
+	100%{
+		background-image: linear-gradient(135deg, rgba(255,255,255,0) 0%,
+         rgba(255,255,255,0) 50%, rgba(255,255,255,.4) 100%);
+	}
+}
