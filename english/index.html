@@ -193,19 +193,19 @@
         </li>
       </ul>
       <div id="tradutor">
-          <a href="/index.html">
-            <img src="/global/img/menu/icon-brasil.png">
-            <p>PT</p>
-          </a>
-          <a href="/english/index.html">
-            <img src="/global/img/menu/ico-usa.png">
-            <p>EN</p>
-          </a>
-          <a href="/espanhol/index.html">
-            <img src="/global/img/menu/icon-es.png">
-            <p>ES</p>
-          </a>
-        </div>
+        <a href="/index.html">
+          <img src="/global/img/menu/icon-brasil.png">
+          <p>PT</p>
+        </a>
+        <a href="/english/index.html">
+          <img src="/global/img/menu/ico-usa.png">
+          <p>EN</p>
+        </a>
+        <a href="/espanhol/index.html">
+          <img src="/global/img/menu/icon-es.png">
+          <p>ES</p>
+        </a>
+      </div>
       <a href="https://portal.claveconsultoria.com.br/" target="_blank" class="bg-purple btn-menu">
         <p>acesso ao portal</p>
       </a>
@@ -1194,7 +1194,16 @@
               </div>
               <!--*-->
               <div class="flex justify-center mt-8">
-                <div class="g-recaptcha" data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-yedn3e351wub" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr&amp;co=aHR0cHM6Ly9jbGF2ZWdyb3VwLmNvbS5icjo0NDM.&amp;hl=pt-BR&amp;v=gYdqkxiddE5aXrugNbBbKgtN&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=g7fpx1o4yz8n"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                <div class="g-recaptcha" data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr">
+                  <div style="width: 304px; height: 78px;">
+                    <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-yedn3e351wub"
+                        frameborder="0" scrolling="no"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr&amp;co=aHR0cHM6Ly9jbGF2ZWdyb3VwLmNvbS5icjo0NDM.&amp;hl=pt-BR&amp;v=gYdqkxiddE5aXrugNbBbKgtN&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=g7fpx1o4yz8n"></iframe>
+                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                      style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                  </div><iframe style="display: none;"></iframe>
+                </div>
               </div>
               <!--*-->
               <div class="flex justify-center">
@@ -1234,7 +1243,7 @@
                     </div>
                     <div class="card-title">
                       <a href="/blog/posts/2025/post-24.11.25.html">
-                        Talent Acquisition: por que o recrutamento não é 
+                        Talent Acquisition: por que o recrutamento não é
                         mais sobre vagas...
                       </a>
                     </div>
@@ -1395,7 +1404,7 @@
                   </div>
                 </article>
               </div>
-              
+
             </div>
           </div>
 
@@ -1520,7 +1529,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
   <!-- RD Station -->
-  <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/c7528217-45b5-4373-9d35-5eec4b4a6d55-loader.js" ></script>
+  <script type="text/javascript" async
+    src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/c7528217-45b5-4373-9d35-5eec4b4a6d55-loader.js"></script>
 
 
   <!-- Initialize Swiper -->
@@ -1701,13 +1711,13 @@
     AOS.init();
   </script>
 
- <!-- reCAPTCHA -->
+  <!-- reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script>
-    (function() {
+    (function () {
       emailjs.init("YOUR_PUBLIC_KEY_HERE"); // Cole sua public key do EmailJS aqui
     })();
 
@@ -1749,22 +1759,22 @@
         referral: referral,
         message: message,
       })
-      .then(() => {
-        status.style.color = "green";
-        status.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
-        document.getElementById("contactForm").reset();
-        grecaptcha.reset();
-      })
-      .catch(() => {
-        status.style.color = "red";
-        status.textContent = "Ocorreu um erro ao enviar. Tente novamente.";
-      });
+        .then(() => {
+          status.style.color = "green";
+          status.textContent = "Mensagem enviada com sucesso! Obrigado pelo contato.";
+          document.getElementById("contactForm").reset();
+          grecaptcha.reset();
+        })
+        .catch(() => {
+          status.style.color = "red";
+          status.textContent = "Ocorreu um erro ao enviar. Tente novamente.";
+        });
     });
   </script>
 
-<!-- WebChat Digisac -->
+  <!-- WebChat Digisac -->
   <script>
-    window._digisac = { 
+    window._digisac = {
       id: "5bb60344-4193-435c-9519-a221db846748"
     }
   </script>
