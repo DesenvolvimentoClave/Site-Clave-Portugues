@@ -155,8 +155,10 @@ nav > ul > li:hover > a {
 
 #tradutor {
 	display: flex;
-    gap: 10px;
-    align-items: center;
+  gap: 10px;
+  align-items: center;
+  position: relative;
+  top: 7px;
 }
 
 #tradutor img {
@@ -223,7 +225,7 @@ nav > ul > li:hover > a {
 }
 
 .logo{
-	width: 200px;
+	  width: 180px;
     padding: 0 20px;
     text-align: center;
     box-sizing: border-box;
