@@ -294,65 +294,66 @@
         </div>
 
         <!--//////////////////-->
-      <form id="form-contato" class="flex justify-center form-contact mt-16" action="https://api.staticforms.xyz/submit" method="POST">
-        <div class="w-full md:w-3/4">
-          <div class="input-container">
-            <label>Nombre *</label>
-            <input name="$nome" class="input" type="text" placeholder=" " required />
+        <form id="form-contato" class="flex justify-center form-contact mt-16" action="https://api.staticforms.xyz/submit" method="POST">
+          <div class="w-full md:w-3/4">
+            <div class="input-container">
+              <label>Nombre *</label>
+              <input name="$nome" class="input" type="text" placeholder=" " required />
+            </div>
+
+            <div class="input-container">
+              <label>Correo electrónico *</label>
+              <input name="$email" class="input" type="email" placeholder=" " required />
+            </div>
+
+            <div class="input-container">
+              <label>Teléfono de contacto *</label>
+              <input name="$telefone" class="input" type="tel" placeholder=" " required />
+            </div>
+
+            <div class="input-container">
+              <label>¿Quién sería el denunciado? *</label>
+              <select name="$denunciado" id="denunciado" class="input" required>
+                <option value="" selected disabled hidden>Seleccione una opción</option>
+                <option value="Colaborador Clave">Colaborador Clave</option>
+                <option value="Prestador de servicios / proveedor">Prestador de servicios</option>
+                <option value="Socio">Proveedor</option>
+                <option value="Socio">Socio</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label>Describa la ocurrencia *</label>
+              <textarea name="$mensagem" class="input text-base h-40 resize-none" placeholder="Describa el motivo de su contacto" required ></textarea>
+            </div>
+
+            <div class="mt-36 text-center">
+              <p class="text-sm leading-relaxed">
+                Al enviar este formulario declaro que he leído y acepto los términos de
+                <a class="cor-blue-one" href="/espanhol/sobre-a-clave/politica-de-privacidade.html">
+                  Privacidad de Datos
+                </a>.
+              </p>
+            </div>
+
+            <div class="flex justify-center mt-8">
+              <div
+                id="g-recaptcha-response"
+                class="g-recaptcha"
+                data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr"
+              ></div>
+            </div>
+
+            <div class="flex justify-center">
+              <button id="btnSubmit" type="submit" class="submit w-full md:w-60">enviar</button>
+            </div>
           </div>
 
-          <div class="input-container">
-            <label>Correo electrónico *</label>
-            <input name="$email" class="input" type="email" placeholder=" " required />
-          </div>
-
-          <div class="input-container">
-            <label>Teléfono de contacto *</label>
-            <input name="$telefone" class="input" type="tel" placeholder=" " required />
-          </div>
-
-          <div class="input-container">
-            <label>¿Quién sería el denunciado? *</label>
-            <select name="$denunciado" id="denunciado" class="input" required>
-              <option value="" selected disabled hidden>Seleccione una opción</option>
-              <option value="Colaborador Clave">Colaborador Clave</option>
-              <option value="Prestador de servicios / proveedor">Prestador de servicios / proveedor</option>
-              <option value="Socio">Socio</option>
-              <option value="Otros">Otros</option>
-            </select>
-          </div>
-
-          <div class="input-container">
-            <label>Describa la ocurrencia *</label>
-            <textarea name="$mensaje" class="input text-base h-40 resize-none" placeholder="Describa el motivo de su contacto" required ></textarea>
-          </div>
-
-          <div class="mt-36 text-center">
-            <p class="text-sm leading-relaxed">
-              Al enviar este formulario declaro que he leído y acepto los términos de
-              <a class="cor-blue-one" href="/espanhol/sobre-a-clave/politica-de-privacidade.html">
-                Privacidad de Datos
-              </a>.
-            </p>
-          </div>
-
-          <div class="flex justify-center mt-8">
-            <div
-              id="g-recaptcha-response"
-              class="g-recaptcha"
-              data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr"
-            ></div>
-          </div>
-
-          <div class="flex justify-center">
-            <button id="btnSubmit" type="submit" class="submit w-full md:w-60">enviar</button>
-          </div>
-        </div>
-
-        <input type="hidden" name="subject" value="Denúncia - Contato feito para registrar denúncia." />
-        <input type="hidden" name="accessKey" value="8499f12f-546e-42bb-a6c0-f8b98ba9af23" />
-        <input type="hidden" name="redirectTo" value="https://clavegroup.com.br/espanhol/fale-conosco/agradecimento.html" />
-      </form>
+          <input type="hidden" name="subject" value="Denúncia - Contato feito para registrar denúncia." />
+          <input type="hidden" name="accessKey" value="8499f12f-546e-42bb-a6c0-f8b98ba9af23" />
+          <input type="hidden" name="redirectTo" value="https://clavegroup.com.br/espanhol/fale-conosco/agradecimento.html" />
+        </form>
       </div>
     </section>
   </main>

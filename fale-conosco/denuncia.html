@@ -298,107 +298,64 @@
 
         <!--//////////////////-->
         <form id="form-contato" class="flex justify-center form-contact mt-16" action="https://api.staticforms.xyz/submit" method="POST">
-          <div class="md:w-3/4">
-            <!-- Nome -->
+          <div class="w-full md:w-3/4">
             <div class="input-container">
-              <label>Nome</label>
+              <label>Nome *</label>
               <input name="$nome" class="input" type="text" placeholder=" " required />
             </div>
-            <div class="input-container ">
-              <label>E-mail</label>
-              <input name="$email" class="input" type="text" placeholder=" " required />
-            </div>
-            <div class="input-container ">
-              <label>Telefone de Contato</label>
-              <input name="$telefone" class="input" type="text" placeholder=" " required />
-            </div>
-            <div class="input-container">
-              <label>Site da sua empesa (se houver)</label>
-              <input name="$site" class="input" type="text" placeholder=" " />
-            </div>
-            <!--*-->
-            <div class="input-container">
-              <label>Observação</label>
-              <textarea name="$mensagem" class="input text-base h-40"
-                placeholder="Descreva o motivo do seu contato"></textarea>
-            </div>
-            <!--//-->
-            <div class="mt-48">
-              <h5>Qual(is) solicitação(ões) deseja?</h5>
-              <div class="md:flex gap-8">
-                <div class="ajuste-input flex flex-col md:w-1/2">
-                  <label for="op1">
-                    <input type="checkbox" class="option-input checkbox" id="op1"
-                      name="$Confirmar existência do Tratamento" />
-                    Confirmar existência do Tratamento
-                  </label>
-                  <label for="op2">
-                    <input type="checkbox" class="option-input checkbox" id="op2" name="$Confirmar acesso aos dados" />
-                    Confirmar acesso aos dados
-                  </label>
-                  <label for="op3">
-                    <input type="checkbox" class="option-input checkbox" id="op3"
-                      name="$Corrigir dados incompletos, inexatos ou desatualizados" />
-                    Corrigir dados incompletos, inexatos ou desatualizados
-                  </label>
-                  <label for="op4">
-                    <input type="checkbox" class="option-input checkbox" id="op4"
-                      name="$Fazer oposição ao tratamento de dados" />
-                    Fazer oposição ao tratamento de dados
-                  </label>
-                  <label for="op5">
-                    <input type="checkbox" class="option-input checkbox" id="op5" name="$Solicitar anonimização ou bloqueio ou eliminação de dados desnecessários,
-                                      excessivos ou tratados em desconformidade" />
-                    Solicitar anonimização ou bloqueio ou eliminação de dados desnecessários,
-                    excessivos ou tratados em desconformidade
-                  </label>
-                </div>
-                <!--*-->
-                <div class="ajuste-input flex flex-col md:w-1/2">
-                  <label for="op6">
-                    <input type="checkbox" class="option-input checkbox" id="op6"
-                      name="$Realizar a portabilidade para outra empresa" />
-                    Realizar a portabilidade para outra empresa
-                  </label>
-                  <label for="op7">
-                    <input type="checkbox" class="option-input checkbox" id="op7"
-                      name="$Informar com quais empresas os dados foram compartilhados" />
-                    Informar com quais empresas os dados foram compartilhados
-                  </label>
-                  <label for="op8">
-                    <input type="checkbox" class="option-input checkbox" id="op8"
-                      name="$Informar as consequências de não conceder a permissão" />
-                    Informar as consequências de não conceder a permissão
-                  </label>
-                  <label for="op9">
-                    <input type="checkbox" class="option-input checkbox" id="op9"
-                      name="$Pedir a revogação do consentimento" />
-                    Pedir a revogação do consentimento
-                  </label>
-                  <label for="op10">
-                    <input type="checkbox" class="option-input checkbox" id="op10"
-                      name="$Solicitar a revisão das decisões automatizadas" />
-                    Solicitar a revisão das decisões automatizadas
-                  </label>
 
-                  <input type="text" name="empresa" id="empresa">
-                  <input type="text" name="honeypot" id="honeypot">
-                </div>
-              </div>
+            <div class="input-container">
+              <label>E-mail *</label>
+              <input name="$email" class="input" type="email" placeholder=" " required />
             </div>
-            <!--//-->
-            <div class="flex justify-center mt-16">
-              <div id="g-recaptcha-response" class="g-recaptcha" data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr"></div>
+
+            <div class="input-container">
+              <label>Telefone de Contato *</label>
+              <input name="$telefone" class="input" type="tel" placeholder=" " required />
             </div>
-            <!--//-->
-            <div class="flex justify-center mt-4">
-              <button id="btnSubmit" type="submit" class="submit w-60">enviar</button>
-              <input type="hidden" name="subject" value="Denúncia - Contato feito para registrar denúncia." />
+
+            <div class="input-container">
+              <label>Quem seria o denunciado? *</label>
+              <select name="$denunciado" id="denunciado" class="input" required>
+                <option value="" selected disabled hidden>Selecione uma opção</option>
+                <option value="Colaborador Clave">Colaborador Clave</option>
+                <option value="Prestador de servicios / proveedor">Prestador de serviços</option>
+                <option value="Socio">Fornecedor</option>
+                <option value="Socio">Parceiro</option>
+                <option value="Otros">Outros</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label>Descreva a ocorrência *</label>
+              <textarea name="$mensagem" class="input text-base h-40 resize-none" placeholder="Descreva o motivo do seu contato" required ></textarea>
+            </div>
+
+            <div class="mt-36 text-center">
+              <p class="text-sm leading-relaxed">
+                Ao enviar este formulário declaro que li e concordo com os termos de
+                <a class="cor-blue-one" href="/espanhol/sobre-a-clave/politica-de-privacidade.html">
+                  Privacidade de Dados
+                </a>.
+              </p>
+            </div>
+
+            <div class="flex justify-center mt-8">
+              <div
+                id="g-recaptcha-response"
+                class="g-recaptcha"
+                data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr"
+              ></div>
+            </div>
+
+            <div class="flex justify-center">
+              <button id="btnSubmit" type="submit" class="submit w-full md:w-60">enviar</button>
             </div>
           </div>
 
-          <input type="hidden" name="accessKey" value="8499f12f-546e-42bb-a6c0-f8b98ba9af23">
-          <input type="hidden" name="redirectTo" value="https://clavegroup.com.br/fale-conosco/agradecimento.html">
+          <input type="hidden" name="subject" value="Denúncia - Contato feito para registrar denúncia." />
+          <input type="hidden" name="accessKey" value="8499f12f-546e-42bb-a6c0-f8b98ba9af23" />
+          <input type="hidden" name="redirectTo" value="https://clavegroup.com.br/espanhol/fale-conosco/agradecimento.html" />
         </form>
       </div>
     </section>
