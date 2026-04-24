@@ -57,9 +57,9 @@
     input,
     textarea,
     select {
-      border: 2px solid #e3e3e3;
-      border-radius: 8px;
-      padding: 12px;
+      border: 2px solid #e3e3e3 !important;
+      border-radius: 8px !important;
+      padding: 12px !important;
       font-size: 15px;
       transition: all 0.2s ease;
       resize: none;
@@ -69,23 +69,25 @@
     input:focus,
     textarea:focus,
     select:focus {
-      border-color: #6f3bef;
+      border-color: #6f3bef !important;
       outline: none;
-      box-shadow: 0 0 0 3px rgba(111, 59, 239, 0.15);
+      box-shadow: 0 0 0 3px rgba(111, 59, 239, 0.15) !important;
     }
 
-    button {
-      background: linear-gradient(135deg, #6f3bef, #45d2c3);
+
+    .submit {
+      background: var(--green-one);
       color: #fff;
-      border: none;
-      border-radius: 8px;
-      padding: 14px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      margin: 7px 10px 0px;
+      font-size: 20px;
     }
 
-    button:hover {
+    .submit:hover {
       opacity: 0.9;
       transform: translateY(-1px);
     }
