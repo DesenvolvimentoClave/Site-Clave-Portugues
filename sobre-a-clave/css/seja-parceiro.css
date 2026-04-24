@@ -64,6 +64,7 @@ details>p {
     position: sticky;
     top: max(16vh, 10em);
     padding: 2em 1.5em;
+    border-radius: 25px;
     min-height: 19em;
     background: #fff;
     box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
@@ -104,7 +105,7 @@ details>p {
 
     .scroll-cards__item {
       --offset: 1em;
-      padding-left: 5em;
+      padding-left: 6em;
     }
     .scroll-cards__item:before {
       counter-increment: card;
@@ -112,8 +113,8 @@ details>p {
       display: flex; 
       align-items: center;
       justify-content: center;
-      width: 1.5em;
-      height: 1.5em;
+      width: 2em;
+      height: 2em;
       background: var(--pink-one);
       color: #fff;
       text-align: center;
@@ -122,7 +123,7 @@ details>p {
       left: 0.5em;
       top: 0.6em;
       font-weight: 800;
-      font-size: 35px;
+      font-size: 32px;
     }
   }
 
