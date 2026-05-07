@@ -7,9 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="adopt-website-id" content="af24bee3-a8b4-4371-86dd-81a20c7d272f" />
 
-  <!-- AdOpt Cookie-->
-  <script src="//tag.goadopt.io/injector.js?website_code=af24bee3-a8b4-4371-86dd-81a20c7d272f"
-    class="adopt-injector"></script>
 
   <!-- Favicon -->
   <link href="/global/img/logos/favicon.ico" rel="icon">
@@ -1174,16 +1171,7 @@
               </div>
               <!--*-->
               <div class="flex justify-center mt-8">
-                <div class="g-recaptcha" data-sitekey="6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr">
-                  <div style="width: 304px; height: 78px;">
-                    <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-yedn3e351wub"
-                        frameborder="0" scrolling="no"
-                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
-                        src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcEEoopAAAAANUuF3WYdF4o3FVIyAvpTkJA6_Fr&amp;co=aHR0cHM6Ly9jbGF2ZWdyb3VwLmNvbS5icjo0NDM.&amp;hl=pt-BR&amp;v=gYdqkxiddE5aXrugNbBbKgtN&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=g7fpx1o4yz8n"></iframe>
-                    </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
-                      style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
-                  </div><iframe style="display: none;"></iframe>
-                </div>
+                <div class="g-recaptcha" data-sitekey="6LdHwN0sAAAAANfKCkgEEmisBG7k7fPPWVGHADas"></div>
               </div>
               <!--*-->
               <div class="flex justify-center">
@@ -1493,6 +1481,37 @@
     </section>
   </footer>
 
+<!-- Botão flutuante (inicialmente escondido) -->
+<div class="cookie-float" id="cookieFloat">
+  ✔️
+</div>
+
+<!-- Banner de cookie -->
+<div class="cookie-container" id="cookieContainer" aria-live="polite">
+  <div class="cookie-content">
+    <div class="cookie-header">
+      <span>Controla tu privacidad</span>
+    </div>
+
+    <p>Nuestro sitio web utiliza cookies para mejorar la navegación.</p>
+
+    <div class="cookie-links">
+      <a href="/espanhol/sobre-a-clave/politica-de-privacidade.html" target="_blank">Política de Privacidad</a> -
+      <a href="/espanhol/sobre-a-clave/doc/Termo-de-Uso-Espanhol.pdf" target="_blank">Términos de uso</a> 
+    </div>
+
+    <div class="cookie-actions">
+      <button class="btn-reject" id="rejectCookie" type="button">Rechazar</button>
+      <button class="btn-primary" id="acceptCookie" type="button">Aceptar</button>
+    </div>
+  </div>
+
+  <button class="cookie-circle" id="cookieCircle" type="button" aria-label="Abrir preferencias de cookies">
+    ✔
+  </button>
+</div>
+
+
   <!-- JavaScript Libraries -->
   <script src="/global/js/main.js"></script>
   <script src="/global/js/home.js"></script>
@@ -1685,7 +1704,7 @@
   </script>
 
   <!-- reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
 
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -1752,6 +1771,58 @@
     }
   </script>
   <script src="https://webchat.digisac.app/embedded.js"></script>
+
+<!--/ Cookie /-->
+<script>
+  const container = document.getElementById('cookieContainer');
+  const acceptBtn  = document.getElementById('acceptCookie');
+  const circleBtn  = document.getElementById('cookieCircle');
+
+  // ===== CONFIGURAÇÃO =====
+  const MODE = "session+daily"; // "session" | "daily" | "session+daily"
+  const DAY_MS = 24 * 60 * 60 * 1000;
+
+  const KEY_SESSION_SEEN = "cookie_seen_session";
+  const KEY_LAST_ACCEPT  = "cookie_last_accept_at";
+
+  const now = Date.now();
+  const lastAccept = Number(localStorage.getItem(KEY_LAST_ACCEPT) || 0);
+  const sessionSeen = sessionStorage.getItem(KEY_SESSION_SEEN) === "1";
+
+  function shouldOpenBanner() {
+    const passed24h = !lastAccept || (now - lastAccept) >= DAY_MS;
+
+    if (MODE === "session") return !sessionSeen;                  // abre 1x por sessão
+    if (MODE === "daily")   return passed24h;                     // abre após 24h
+    return (!sessionSeen) || passed24h;                           // session+daily
+  }
+
+  function openBanner() {
+    container.classList.remove("closed");
+    sessionStorage.setItem(KEY_SESSION_SEEN, "1"); // marca que já abriu nesta sessão
+  }
+
+  function closeToCircle() {
+    container.classList.add("closed");
+  }
+
+  // Estado inicial ao entrar no site:
+  if (shouldOpenBanner()) openBanner();
+  else closeToCircle();
+
+  // Ao clicar "Aceitar": fecha e vira círculo + salva timestamp (24h)
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem(KEY_LAST_ACCEPT, String(Date.now()));
+    sessionStorage.setItem(KEY_SESSION_SEEN, "1");
+    closeToCircle();
+  });
+
+  // Clique no círculo reabre (opcional)
+  circleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    openBanner();
+  });
+</script>
 
 
 
