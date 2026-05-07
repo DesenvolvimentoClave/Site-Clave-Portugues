@@ -121,11 +121,13 @@
   content: '\f00c';
   font-size: 20px;
   font-weight:bold;
-  position: absolute;
-  align-items:center;
-  justify-content:center;
-  font-family:'Font Awesome 5 Free';
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Font Awesome 5 Free';
   color: white;
+  top: -8px;
+  left: -8px;
 }
 
 .option-input.radio {
